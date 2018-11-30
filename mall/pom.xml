@@ -52,6 +52,13 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>tech.qijin.commons</groupId>
+                <artifactId>commons-dependencies</artifactId>
+                <version>${commons.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
                 <groupId>tech.qijin.incubator</groupId>
                 <artifactId>mall-base</artifactId>
                 <version>${project.version}</version>

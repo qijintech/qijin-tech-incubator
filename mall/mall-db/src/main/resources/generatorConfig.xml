@@ -39,6 +39,15 @@
         </javaClientGenerator>
         <table tableName="%">
             <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+            <columnOverride column="valid" property="valid"
+                            javaType="tech.qijin.incubator.mall.base.type.ValidType"/>
+        </table>
+        <table tableName="commodity">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+            <columnOverride column="type" property="type"
+                            javaType="tech.qijin.incubator.mall.base.type.CommodityType"/>
+            <columnOverride column="valid" property="valid"
+                            javaType="tech.qijin.incubator.mall.base.type.ValidType"/>
         </table>
     </context>
 </generatorConfiguration>

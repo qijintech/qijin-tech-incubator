@@ -1,19 +1,24 @@
 server:
-  port: 8080
+  port: 9001
 
 spring:
   profiles:
     active: dev
   datasource:
     druid:
-      url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8
-      username: test
-      password: Test@123
+      url: jdbc:mysql://127.0.0.1:3306/mall?useUnicode=true&characterEncoding=utf-8
+      username: mall
+      password: Mall@123
       driver-class-name: com.mysql.jdbc.Driver
       initial-size: 10
       max-active: 30
       min-idle: 5
       max-wait: 60
+  freemarker:
+    suffix: .ftl
+    template-loader-path: classpath:/freemarker/
+    cache: false
+    charset: utf-8
 
 # swagger config
 swagger:

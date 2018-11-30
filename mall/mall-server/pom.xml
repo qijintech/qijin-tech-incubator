@@ -13,6 +13,14 @@
 
     <dependencies>
         <dependency>
+            <groupId>tech.qijin.commons</groupId>
+            <artifactId>commons-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tech.qijin.commons</groupId>
+            <artifactId>commons-mybatis</artifactId>
+        </dependency>
+        <dependency>
             <groupId>tech.qijin.incubator</groupId>
             <artifactId>mall-base</artifactId>
         </dependency>
@@ -66,6 +74,11 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
+        <!-- Spring Boot Freemarker 依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
     </dependencies>
 

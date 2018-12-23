@@ -23,14 +23,14 @@
 
 function find_groupid()
 {
-    line=`grep "groupId" pom.xml | head -n2 |tail -n1 | sed 's/ //g'`
+    line=`grep "groupId" pom.xml | head -n1 |tail -n1 | sed 's/ //g'`
     length=${#line}
     step=$((length-19))
     echo ${line:9:$step}
 }
 function find_artifactid()
 {
-    line=`grep "artifactId" pom.xml | head -n2 |tail -n1|sed 's/ //g'`
+    line=`grep "artifactId" pom.xml | head -n1 |tail -n1|sed 's/ //g'`
     length=${#line}
     step=$((length-25))
     echo ${line:12:$step}
@@ -54,7 +54,7 @@ function gen_tmp_project
         echo "[INFO] $artifactid exists. delete it"
         /bin/rm -rf $artifactid
     fi
-    mvn archetype:generate -DarchetypeGroupId=com.aviagames.archetype -DarchetypeArtifactId=aviagames-multimodules -DarchetypeVersion=1.0 -DgroupId=$groupid  -DartifactId=$artifactid  -Dversion=$version  -Dpackage=$package -DinteractiveMode=false
+    mvn archetype:generate -DarchetypeGroupId=tech.qijin.archetype -DarchetypeArtifactId=qijin-multimodules -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=$groupid  -DartifactId=$artifactid  -Dversion=$version  -Dpackage=$package -DinteractiveMode=false
     cd -
 }
 
@@ -86,6 +86,11 @@ function diff_file
         fi
     else
         echo "[WARNING] file not found: $desFile. copy it"
+        desPath=$(dirname "$desFile")
+        if [ ! -d $desPath ];then
+            echo "$desPath not exist. create"
+            mkdir -p $desPath
+        fi
         cp $srcFile $desFile
     fi
 }

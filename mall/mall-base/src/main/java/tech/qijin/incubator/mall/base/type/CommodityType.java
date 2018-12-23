@@ -1,6 +1,7 @@
 package tech.qijin.incubator.mall.base.type;
 
-import tech.qijin.commons.lang.constant.EnumValue;
+
+import tech.qijin.util4j.lang.constant.EnumValue;
 
 /**
  * @author michealyang

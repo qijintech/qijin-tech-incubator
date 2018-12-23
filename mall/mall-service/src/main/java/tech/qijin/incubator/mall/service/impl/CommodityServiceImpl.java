@@ -7,9 +7,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import tech.qijin.commons.lang.dto.ResultDto;
-import tech.qijin.commons.utils.assign.AssignUtil;
-import tech.qijin.commons.utils.builder.ResBuilder;
+import tech.qijin.util4j.lang.dto.ResultDto;
+import tech.qijin.util4j.utils.ResBuilder;
 import tech.qijin.incubator.mall.base.type.CommodityType;
 import tech.qijin.incubator.mall.base.type.ValidType;
 import tech.qijin.incubator.mall.db.dao.CommodityDao;
@@ -33,8 +32,8 @@ public class CommodityServiceImpl implements CommodityService {
 
     @Override
     public ResultDto<PageInfo<Commodity>> listCommodities(CommodityType commodityType, Integer pageNo, Integer pageSize) {
-        int iPageNo = AssignUtil.assign(pageNo, 0);
-        int iPageSize = AssignUtil.assign(pageSize, 16);
+        int iPageNo = pageNo;
+        int iPageSize = pageSize;
         if (commodityType == null) {
             commodityType = CommodityType.NORMAL;
         }

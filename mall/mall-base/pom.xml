@@ -14,8 +14,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>tech.qijin.commons</groupId>
-            <artifactId>commons-lang</artifactId>
+            <groupId>tech.qijin.util4j</groupId>
+            <artifactId>util4j-lang</artifactId>
         </dependency>
     </dependencies>
 

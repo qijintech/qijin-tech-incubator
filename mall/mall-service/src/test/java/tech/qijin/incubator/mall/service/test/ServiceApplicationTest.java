@@ -11,11 +11,11 @@ import org.springframework.test.context.TestPropertySource;
  * @author UnitTest
  */
 
-@SpringBootApplication(scanBasePackages = {"tech.qijin.incubator.mall",
-        "tech.qijin.commons"}, exclude = PageHelperAutoConfiguration.class)
+@SpringBootApplication(scanBasePackages = {"tech.qijin.incubator.mall"},
+        exclude = PageHelperAutoConfiguration.class)
 @MapperScan("tech.qijin.incubator.mall.db.dao")
 @SpringBootTest
-@TestPropertySource(locations="classpath:application.yml")
+@TestPropertySource(locations = "classpath:application.yml")
 public class ServiceApplicationTest {
 
     public static void main(String[] args) {

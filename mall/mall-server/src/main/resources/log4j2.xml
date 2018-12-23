@@ -33,15 +33,11 @@
 
 
     <Loggers>
-
-        <Logger name="tech.qijin.incubator.mall" level="info" additivity="false">
-            <AppenderRef ref="DailyLog"/>
-        </Logger>
         <Logger name="BASE" level="info" additivity="false">
             <AppenderRef ref="BaseAppender"/>
         </Logger>
         <Root level="info">
-            <AppenderRef ref="Console"/>
+            <AppenderRef ref="DailyLog"/>
         </Root>
     </Loggers>
 </Configuration>

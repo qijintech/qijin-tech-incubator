@@ -5,8 +5,8 @@ import org.springframework.aop.framework.AopProxy;
 import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import tech.qijin.commons.advice.annotation.Timed;
 import tech.qijin.incubator.mall.service.TestService;
+import tech.qijin.util4j.aop.annotation.Timed;
 
 /**
  * @author michealyang

@@ -13,16 +13,16 @@
 
     <dependencies>
         <dependency>
-            <groupId>tech.qijin.commons</groupId>
-            <artifactId>commons-lang</artifactId>
+            <groupId>tech.qijin.util4j</groupId>
+            <artifactId>util4j-lang</artifactId>
         </dependency>
         <dependency>
-            <groupId>tech.qijin.commons</groupId>
-            <artifactId>commons-utils</artifactId>
+            <groupId>tech.qijin.util4j</groupId>
+            <artifactId>util4j-utils</artifactId>
         </dependency>
         <dependency>
-            <groupId>tech.qijin.commons</groupId>
-            <artifactId>commons-advice</artifactId>
+            <groupId>tech.qijin.util4j</groupId>
+            <artifactId>util4j-aop</artifactId>
         </dependency>
         <dependency>
             <groupId>tech.qijin.incubator</groupId>
@@ -45,6 +45,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-autoconfigure</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.github.pagehelper</groupId>

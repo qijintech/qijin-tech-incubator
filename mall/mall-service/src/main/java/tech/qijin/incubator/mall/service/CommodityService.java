@@ -1,8 +1,8 @@
 package tech.qijin.incubator.mall.service;
 
 
-import tech.qijin.commons.lang.dto.ResultDto;
 import tech.qijin.incubator.mall.base.type.CommodityType;
+import tech.qijin.util4j.lang.dto.ResultDto;
 
 /**
  * @author michealyang

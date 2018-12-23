@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import tech.qijin.commons.lang.dto.ResultDto;
-import tech.qijin.commons.web.pojo.ResultVo;
+import tech.qijin.util4j.lang.dto.ResultDto;
+import tech.qijin.util4j.web.pojo.ResultVo;
 import tech.qijin.incubator.mall.server.vo.CommodityReqVo;
 import tech.qijin.incubator.mall.service.CommodityService;
 

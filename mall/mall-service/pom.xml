@@ -4,14 +4,25 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>mall</artifactId>
-        <groupId>tech.qijin.incubator</groupId>
+        <groupId>tech.qijin.incubator.mall</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>mall-service</artifactId>
-    <groupId>tech.qijin.incubator</groupId>
+    <groupId>tech.qijin.incubator.mall</groupId>
     <packaging>jar</packaging>
 
     <dependencies>
+        <!--project modules-->
+        <dependency>
+            <groupId>tech.qijin.incubator.mall</groupId>
+            <artifactId>mall-db</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tech.qijin.incubator.mall</groupId>
+            <artifactId>mall-base</artifactId>
+        </dependency>
+
+        <!--util4j modules-->
         <dependency>
             <groupId>tech.qijin.util4j</groupId>
             <artifactId>util4j-lang</artifactId>
@@ -24,14 +35,29 @@
             <groupId>tech.qijin.util4j</groupId>
             <artifactId>util4j-aop</artifactId>
         </dependency>
+
+        <!--spring boot modules-->
         <dependency>
-            <groupId>tech.qijin.incubator</groupId>
-            <artifactId>mall-db</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>tech.qijin.incubator</groupId>
-            <artifactId>mall-base</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
+
+        <!--alibaba modules-->
+        <dependency>
+            <groupId>com.alibaba.spring</groupId>
+            <artifactId>spring-context-support</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!--db modules-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -41,11 +67,8 @@
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
+
+        <!--other modules-->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-autoconfigure</artifactId>

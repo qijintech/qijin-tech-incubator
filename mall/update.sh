@@ -23,14 +23,14 @@
 
 function find_groupid()
 {
-    line=`grep "groupId" pom.xml | head -n1 |tail -n1 | sed 's/ //g'`
+    line=`grep "groupId" pom.xml | head -n2 |tail -n1 | sed 's/ //g'`
     length=${#line}
     step=$((length-19))
     echo ${line:9:$step}
 }
 function find_artifactid()
 {
-    line=`grep "artifactId" pom.xml | head -n1 |tail -n1|sed 's/ //g'`
+    line=`grep "artifactId" pom.xml | head -n2 |tail -n1|sed 's/ //g'`
     length=${#line}
     step=$((length-25))
     echo ${line:12:$step}

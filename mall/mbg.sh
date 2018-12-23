@@ -4,7 +4,7 @@ mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate -pl mall-db/
 
 echo "开始生成Dao文件"
 
-pack=tech.qijin.incubator
+pack=tech.qijin.incubator.mall
 artifactId=mall
 
 pack_path=`echo $pack | sed 's/\./\//g'`

@@ -7,9 +7,9 @@
     </settings>
     <typeHandlers>
         <typeHandler handler="tech.qijin.util4j.mybatis.handler.EnumValueTypeHandler"
-                     javaType="tech.qijin.incubator.mall.base.type.CommodityType" />
+                     javaType="tech.qijin.util4j.trace.pojo.EnvEnum" />
         <typeHandler handler="tech.qijin.util4j.mybatis.handler.EnumValueTypeHandler"
-                     javaType="tech.qijin.incubator.mall.base.type.ValidType" />
+                     javaType="tech.qijin.incubator.mall.base.type.CommodityType" />
     </typeHandlers>
     <plugins>
         <!--https://github.com/pagehelper/Mybatis-PageHelper/blob/master/wikis/en/HowToUse.md -->

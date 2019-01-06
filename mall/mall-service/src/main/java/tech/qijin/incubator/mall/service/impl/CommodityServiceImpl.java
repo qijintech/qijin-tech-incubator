@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 import tech.qijin.util4j.lang.dto.ResultDto;
 import tech.qijin.util4j.utils.ResBuilder;
 import tech.qijin.incubator.mall.base.type.CommodityType;
-import tech.qijin.incubator.mall.base.type.ValidType;
 import tech.qijin.incubator.mall.db.dao.CommodityDao;
 import tech.qijin.incubator.mall.db.model.Commodity;
 import tech.qijin.incubator.mall.db.model.CommodityExample;
@@ -38,7 +37,7 @@ public class CommodityServiceImpl implements CommodityService {
             commodityType = CommodityType.NORMAL;
         }
         CommodityExample example = new CommodityExample();
-        example.or().andTypeEqualTo(commodityType).andValidEqualTo(ValidType.VALID);
+        example.or().andTypeEqualTo(commodityType);
         Page<Commodity> commodities = PageHelper.startPage(iPageNo, iPageSize, true).doSelectPage(() ->
                 commodityDao.selectByExample(example));
         return ResBuilder.genData(new PageInfo<>(commodities));

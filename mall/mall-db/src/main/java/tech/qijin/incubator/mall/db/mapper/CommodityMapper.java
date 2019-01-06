@@ -32,12 +32,12 @@ public interface CommodityMapper {
 
     @Insert({
         "insert into commodity (title, brand, ",
-        "price, quatity, ",
+        "price, quantity, ",
         "pic, slide, type, ",
         "valid, ctime, ",
         "utime)",
         "values (#{title,jdbcType=VARCHAR}, #{brand,jdbcType=VARCHAR}, ",
-        "#{price,jdbcType=INTEGER}, #{quatity,jdbcType=INTEGER}, ",
+        "#{price,jdbcType=INTEGER}, #{quantity,jdbcType=INTEGER}, ",
         "#{pic,jdbcType=VARCHAR}, #{slide,jdbcType=VARCHAR}, #{type,jdbcType=TINYINT}, ",
         "#{valid,jdbcType=TINYINT}, #{ctime,jdbcType=TIMESTAMP}, ",
         "#{utime,jdbcType=TIMESTAMP})"
@@ -55,7 +55,7 @@ public interface CommodityMapper {
         @Result(column="title", property="title", jdbcType=JdbcType.VARCHAR),
         @Result(column="brand", property="brand", jdbcType=JdbcType.VARCHAR),
         @Result(column="price", property="price", jdbcType=JdbcType.INTEGER),
-        @Result(column="quatity", property="quatity", jdbcType=JdbcType.INTEGER),
+        @Result(column="quantity", property="quantity", jdbcType=JdbcType.INTEGER),
         @Result(column="pic", property="pic", jdbcType=JdbcType.VARCHAR),
         @Result(column="slide", property="slide", jdbcType=JdbcType.VARCHAR),
         @Result(column="type", property="type", jdbcType=JdbcType.TINYINT),
@@ -67,7 +67,7 @@ public interface CommodityMapper {
 
     @Select({
         "select",
-        "id, title, brand, price, quatity, pic, slide, type, valid, ctime, utime",
+        "id, title, brand, price, quantity, pic, slide, type, valid, ctime, utime",
         "from commodity",
         "where id = #{id,jdbcType=INTEGER}"
     })
@@ -76,7 +76,7 @@ public interface CommodityMapper {
         @Result(column="title", property="title", jdbcType=JdbcType.VARCHAR),
         @Result(column="brand", property="brand", jdbcType=JdbcType.VARCHAR),
         @Result(column="price", property="price", jdbcType=JdbcType.INTEGER),
-        @Result(column="quatity", property="quatity", jdbcType=JdbcType.INTEGER),
+        @Result(column="quantity", property="quantity", jdbcType=JdbcType.INTEGER),
         @Result(column="pic", property="pic", jdbcType=JdbcType.VARCHAR),
         @Result(column="slide", property="slide", jdbcType=JdbcType.VARCHAR),
         @Result(column="type", property="type", jdbcType=JdbcType.TINYINT),
@@ -100,7 +100,7 @@ public interface CommodityMapper {
         "set title = #{title,jdbcType=VARCHAR},",
           "brand = #{brand,jdbcType=VARCHAR},",
           "price = #{price,jdbcType=INTEGER},",
-          "quatity = #{quatity,jdbcType=INTEGER},",
+          "quantity = #{quantity,jdbcType=INTEGER},",
           "pic = #{pic,jdbcType=VARCHAR},",
           "slide = #{slide,jdbcType=VARCHAR},",
           "type = #{type,jdbcType=TINYINT},",

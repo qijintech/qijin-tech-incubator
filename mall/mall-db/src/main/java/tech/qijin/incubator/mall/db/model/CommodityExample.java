@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import tech.qijin.incubator.mall.base.type.CommodityType;
-import tech.qijin.incubator.mall.base.type.ValidType;
 
 public class CommodityExample {
     protected String orderByClause;
@@ -367,63 +366,63 @@ public class CommodityExample {
             return (Criteria) this;
         }
 
-        public Criteria andQuatityIsNull() {
-            addCriterion("quatity is null");
+        public Criteria andQuantityIsNull() {
+            addCriterion("quantity is null");
             return (Criteria) this;
         }
 
-        public Criteria andQuatityIsNotNull() {
-            addCriterion("quatity is not null");
+        public Criteria andQuantityIsNotNull() {
+            addCriterion("quantity is not null");
             return (Criteria) this;
         }
 
-        public Criteria andQuatityEqualTo(Integer value) {
-            addCriterion("quatity =", value, "quatity");
+        public Criteria andQuantityEqualTo(Integer value) {
+            addCriterion("quantity =", value, "quantity");
             return (Criteria) this;
         }
 
-        public Criteria andQuatityNotEqualTo(Integer value) {
-            addCriterion("quatity <>", value, "quatity");
+        public Criteria andQuantityNotEqualTo(Integer value) {
+            addCriterion("quantity <>", value, "quantity");
             return (Criteria) this;
         }
 
-        public Criteria andQuatityGreaterThan(Integer value) {
-            addCriterion("quatity >", value, "quatity");
+        public Criteria andQuantityGreaterThan(Integer value) {
+            addCriterion("quantity >", value, "quantity");
             return (Criteria) this;
         }
 
-        public Criteria andQuatityGreaterThanOrEqualTo(Integer value) {
-            addCriterion("quatity >=", value, "quatity");
+        public Criteria andQuantityGreaterThanOrEqualTo(Integer value) {
+            addCriterion("quantity >=", value, "quantity");
             return (Criteria) this;
         }
 
-        public Criteria andQuatityLessThan(Integer value) {
-            addCriterion("quatity <", value, "quatity");
+        public Criteria andQuantityLessThan(Integer value) {
+            addCriterion("quantity <", value, "quantity");
             return (Criteria) this;
         }
 
-        public Criteria andQuatityLessThanOrEqualTo(Integer value) {
-            addCriterion("quatity <=", value, "quatity");
+        public Criteria andQuantityLessThanOrEqualTo(Integer value) {
+            addCriterion("quantity <=", value, "quantity");
             return (Criteria) this;
         }
 
-        public Criteria andQuatityIn(List<Integer> values) {
-            addCriterion("quatity in", values, "quatity");
+        public Criteria andQuantityIn(List<Integer> values) {
+            addCriterion("quantity in", values, "quantity");
             return (Criteria) this;
         }
 
-        public Criteria andQuatityNotIn(List<Integer> values) {
-            addCriterion("quatity not in", values, "quatity");
+        public Criteria andQuantityNotIn(List<Integer> values) {
+            addCriterion("quantity not in", values, "quantity");
             return (Criteria) this;
         }
 
-        public Criteria andQuatityBetween(Integer value1, Integer value2) {
-            addCriterion("quatity between", value1, value2, "quatity");
+        public Criteria andQuantityBetween(Integer value1, Integer value2) {
+            addCriterion("quantity between", value1, value2, "quantity");
             return (Criteria) this;
         }
 
-        public Criteria andQuatityNotBetween(Integer value1, Integer value2) {
-            addCriterion("quatity not between", value1, value2, "quatity");
+        public Criteria andQuantityNotBetween(Integer value1, Integer value2) {
+            addCriterion("quantity not between", value1, value2, "quantity");
             return (Criteria) this;
         }
 
@@ -637,52 +636,52 @@ public class CommodityExample {
             return (Criteria) this;
         }
 
-        public Criteria andValidEqualTo(ValidType value) {
+        public Criteria andValidEqualTo(Boolean value) {
             addCriterion("valid =", value, "valid");
             return (Criteria) this;
         }
 
-        public Criteria andValidNotEqualTo(ValidType value) {
+        public Criteria andValidNotEqualTo(Boolean value) {
             addCriterion("valid <>", value, "valid");
             return (Criteria) this;
         }
 
-        public Criteria andValidGreaterThan(ValidType value) {
+        public Criteria andValidGreaterThan(Boolean value) {
             addCriterion("valid >", value, "valid");
             return (Criteria) this;
         }
 
-        public Criteria andValidGreaterThanOrEqualTo(ValidType value) {
+        public Criteria andValidGreaterThanOrEqualTo(Boolean value) {
             addCriterion("valid >=", value, "valid");
             return (Criteria) this;
         }
 
-        public Criteria andValidLessThan(ValidType value) {
+        public Criteria andValidLessThan(Boolean value) {
             addCriterion("valid <", value, "valid");
             return (Criteria) this;
         }
 
-        public Criteria andValidLessThanOrEqualTo(ValidType value) {
+        public Criteria andValidLessThanOrEqualTo(Boolean value) {
             addCriterion("valid <=", value, "valid");
             return (Criteria) this;
         }
 
-        public Criteria andValidIn(List<ValidType> values) {
+        public Criteria andValidIn(List<Boolean> values) {
             addCriterion("valid in", values, "valid");
             return (Criteria) this;
         }
 
-        public Criteria andValidNotIn(List<ValidType> values) {
+        public Criteria andValidNotIn(List<Boolean> values) {
             addCriterion("valid not in", values, "valid");
             return (Criteria) this;
         }
 
-        public Criteria andValidBetween(ValidType value1, ValidType value2) {
+        public Criteria andValidBetween(Boolean value1, Boolean value2) {
             addCriterion("valid between", value1, value2, "valid");
             return (Criteria) this;
         }
 
-        public Criteria andValidNotBetween(ValidType value1, ValidType value2) {
+        public Criteria andValidNotBetween(Boolean value1, Boolean value2) {
             addCriterion("valid not between", value1, value2, "valid");
             return (Criteria) this;
         }

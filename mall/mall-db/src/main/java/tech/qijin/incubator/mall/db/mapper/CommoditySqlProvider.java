@@ -40,8 +40,8 @@ public class CommoditySqlProvider {
             sql.VALUES("price", "#{price,jdbcType=INTEGER}");
         }
         
-        if (record.getQuatity() != null) {
-            sql.VALUES("quatity", "#{quatity,jdbcType=INTEGER}");
+        if (record.getQuantity() != null) {
+            sql.VALUES("quantity", "#{quantity,jdbcType=INTEGER}");
         }
         
         if (record.getPic() != null) {
@@ -81,7 +81,7 @@ public class CommoditySqlProvider {
         sql.SELECT("title");
         sql.SELECT("brand");
         sql.SELECT("price");
-        sql.SELECT("quatity");
+        sql.SELECT("quantity");
         sql.SELECT("pic");
         sql.SELECT("slide");
         sql.SELECT("type");
@@ -121,8 +121,8 @@ public class CommoditySqlProvider {
             sql.SET("price = #{record.price,jdbcType=INTEGER}");
         }
         
-        if (record.getQuatity() != null) {
-            sql.SET("quatity = #{record.quatity,jdbcType=INTEGER}");
+        if (record.getQuantity() != null) {
+            sql.SET("quantity = #{record.quantity,jdbcType=INTEGER}");
         }
         
         if (record.getPic() != null) {
@@ -161,7 +161,7 @@ public class CommoditySqlProvider {
         sql.SET("title = #{record.title,jdbcType=VARCHAR}");
         sql.SET("brand = #{record.brand,jdbcType=VARCHAR}");
         sql.SET("price = #{record.price,jdbcType=INTEGER}");
-        sql.SET("quatity = #{record.quatity,jdbcType=INTEGER}");
+        sql.SET("quantity = #{record.quantity,jdbcType=INTEGER}");
         sql.SET("pic = #{record.pic,jdbcType=VARCHAR}");
         sql.SET("slide = #{record.slide,jdbcType=VARCHAR}");
         sql.SET("type = #{record.type,jdbcType=TINYINT}");
@@ -190,8 +190,8 @@ public class CommoditySqlProvider {
             sql.SET("price = #{price,jdbcType=INTEGER}");
         }
         
-        if (record.getQuatity() != null) {
-            sql.SET("quatity = #{quatity,jdbcType=INTEGER}");
+        if (record.getQuantity() != null) {
+            sql.SET("quantity = #{quantity,jdbcType=INTEGER}");
         }
         
         if (record.getPic() != null) {

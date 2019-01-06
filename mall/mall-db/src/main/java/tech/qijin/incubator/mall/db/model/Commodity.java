@@ -2,7 +2,6 @@ package tech.qijin.incubator.mall.db.model;
 
 import java.util.Date;
 import tech.qijin.incubator.mall.base.type.CommodityType;
-import tech.qijin.incubator.mall.base.type.ValidType;
 
 public class Commodity {
     private Integer id;
@@ -13,7 +12,7 @@ public class Commodity {
 
     private Integer price;
 
-    private Integer quatity;
+    private Integer quantity;
 
     private String pic;
 
@@ -21,7 +20,7 @@ public class Commodity {
 
     private CommodityType type;
 
-    private ValidType valid;
+    private Boolean valid;
 
     private Date ctime;
 
@@ -59,12 +58,12 @@ public class Commodity {
         this.price = price;
     }
 
-    public Integer getQuatity() {
-        return quatity;
+    public Integer getQuantity() {
+        return quantity;
     }
 
-    public void setQuatity(Integer quatity) {
-        this.quatity = quatity;
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
     }
 
     public String getPic() {
@@ -91,11 +90,11 @@ public class Commodity {
         this.type = type;
     }
 
-    public ValidType getValid() {
+    public Boolean getValid() {
         return valid;
     }
 
-    public void setValid(ValidType valid) {
+    public void setValid(Boolean valid) {
         this.valid = valid;
     }
 

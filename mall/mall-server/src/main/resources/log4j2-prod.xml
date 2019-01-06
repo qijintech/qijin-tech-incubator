@@ -29,19 +29,30 @@
                 <TimeBasedTriggeringPolicy/>
             </Policies>
         </RollingRandomAccessFile>
+
+        <RollingRandomAccessFile name="RequestLog" fileName="${log.dir}/mall-server.request.log"
+                                 filePattern="${log.dir}/mall-server.request.log.%d{yyyy-MM-dd}">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} [%-5p][%c{1}] - %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+        </RollingRandomAccessFile>
+
     </Appenders>
 
 
     <Loggers>
-
-        <Logger name="tech.qijin.incubator.mall" level="info" additivity="false">
-            <AppenderRef ref="DailyLog"/>
-        </Logger>
         <Logger name="BASE" level="info" additivity="false">
             <AppenderRef ref="BaseAppender"/>
         </Logger>
+        <Logger name="REQUEST" level="info" additivity="false">
+            <AppenderRef ref="RequestLog"/>
+        </Logger>
         <Root level="info">
             <AppenderRef ref="Console"/>
+            <AppenderRef ref="DailyLog"/>
         </Root>
     </Loggers>
 </Configuration>

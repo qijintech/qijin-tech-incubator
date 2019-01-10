@@ -1,6 +1,7 @@
 package tech.qijin.usercenter.client.util;
 
 import tech.qijin.usercenter.client.pojo.User;
+import tech.qijin.util4j.trace.pojo.Channel;
 
 /**
  * @author michealyang
@@ -15,6 +16,11 @@ public class UserUtil {
     }
 
     public static User getUser() {
+        User user = new User();
+        user.setUserId(10001L);
+        user.setUserName("MichealYang");
+        user.setChannel(Channel.TEST);
+        setUser(user);
         return threadUser.get();
     }
 

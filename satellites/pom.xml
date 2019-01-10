@@ -16,43 +16,47 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>satellites-base</module>
-        <module>satellites-db</module>
-        <module>satellites-service</module>
-        <module>satellites-server</module>
+        <module>satellites-comments</module>
+        <module>satellites-favorites</module>
     </modules>
 
     <properties>
         <project.version>1.0.0-SNAPSHOT</project.version>
         <mysql.connector.version>5.1.47</mysql.connector.version>
+        <usercenter.client.version>1.0.0-SNAPSHOT</usercenter.client.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>tech.qijin.satellites</groupId>
-                <artifactId>satellites-base</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>tech.qijin.satellites</groupId>
-                <artifactId>satellites-db</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>tech.qijin.satellites</groupId>
-                <artifactId>satellites-service</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>tech.qijin.satellites</groupId>
-                <artifactId>satellites-rpcclient</artifactId>
-                <version>${project.version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
+        <dependency>
+            <groupId>tech.qijin.util4j</groupId>
+            <artifactId>util4j-lang</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tech.qijin.util4j</groupId>
+            <artifactId>util4j-trace</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tech.qijin.util4j</groupId>
+            <artifactId>util4j-utils</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tech.qijin.util4j</groupId>
+            <artifactId>util4j-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tech.qijin.util4j</groupId>
+            <artifactId>util4j-mybatis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tech.qijin.usercenter</groupId>
+            <artifactId>usercenter-client</artifactId>
+            <version>${usercenter.client.version}</version>
+        </dependency>
     </dependencies>
 
     <distributionManagement>
@@ -60,14 +64,14 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>versions-maven-plugin</artifactId>
-                <version>${plugin.versions.version}</version>
-                <configuration>
-                    <generateBackupPoms>false</generateBackupPoms>
-                </configuration>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.codehaus.mojo</groupId>-->
+                <!--<artifactId>versions-maven-plugin</artifactId>-->
+                <!--<version>${plugin.versions.version}</version>-->
+                <!--<configuration>-->
+                    <!--<generateBackupPoms>false</generateBackupPoms>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 </project>

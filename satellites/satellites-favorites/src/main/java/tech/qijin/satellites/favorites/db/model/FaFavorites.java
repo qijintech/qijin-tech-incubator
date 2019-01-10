@@ -1,30 +1,35 @@
 package tech.qijin.satellites.favorites.db.model;
 
 import java.util.Date;
+import tech.qijin.util4j.trace.pojo.Channel;
 import tech.qijin.util4j.trace.pojo.EnvEnum;
 
-public class Favorites {
-    private Integer id;
+public class FaFavorites {
+    private Long id;
 
     private Long userId;
 
     private Long itemId;
 
+    private Boolean collect;
+
     private Boolean valid;
 
     private EnvEnum env;
 
-    private Byte channel;
+    private Channel channel;
+
+    private Long version;
 
     private Date ctime;
 
     private Date utime;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -44,6 +49,14 @@ public class Favorites {
         this.itemId = itemId;
     }
 
+    public Boolean getCollect() {
+        return collect;
+    }
+
+    public void setCollect(Boolean collect) {
+        this.collect = collect;
+    }
+
     public Boolean getValid() {
         return valid;
     }
@@ -60,12 +73,20 @@ public class Favorites {
         this.env = env;
     }
 
-    public Byte getChannel() {
+    public Channel getChannel() {
         return channel;
     }
 
-    public void setChannel(Byte channel) {
+    public void setChannel(Channel channel) {
         this.channel = channel;
+    }
+
+    public Long getVersion() {
+        return version;
+    }
+
+    public void setVersion(Long version) {
+        this.version = version;
     }
 
     public Date getCtime() {

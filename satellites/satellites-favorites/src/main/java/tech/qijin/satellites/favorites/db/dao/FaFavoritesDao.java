@@ -1,8 +1,8 @@
 package tech.qijin.satellites.favorites.db.dao;
 
-import tech.qijin.satellites.favorites.db.mapper.FavoritesMapper;
-import tech.qijin.satellites.favorites.db.mapper.FavoritesSqlProvider;
-import tech.qijin.satellites.favorites.db.model.Favorites;
+import tech.qijin.satellites.favorites.db.mapper.FaFavoritesMapper;
+import tech.qijin.satellites.favorites.db.mapper.FaFavoritesSqlProvider;
+import tech.qijin.satellites.favorites.db.model.FaFavorites;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.InsertProvider;
 import com.google.common.collect.Lists;
@@ -15,21 +15,21 @@ import java.util.stream.Collectors;
  * @author: SYSTEM
  **/
 
-public interface FavoritesDao extends FavoritesMapper {
+public interface FaFavoritesDao extends FaFavoritesMapper {
 
 	@InsertProvider(type = SqlProvider.class, method = "batchInsert")
-	int batchInsert(@Param("records") List<Favorites> records);
+	int batchInsert(@Param("records") List<FaFavorites> records);
 
 	class SqlProvider {
 		private static final String VALUES = "VALUES";
-		FavoritesSqlProvider provider = new FavoritesSqlProvider();
+		FaFavoritesSqlProvider provider = new FaFavoritesSqlProvider();
 
 		public String batchInsert(Map<String, Object> param) {
-			List<Favorites> records = (List<Favorites>) param.get("records");
+			List<FaFavorites> records = (List<FaFavorites>) param.get("records");
 			return genSql(records);
 		}
 
-		private String genSql(List<Favorites> records) {
+		private String genSql(List<FaFavorites> records) {
 			List<String> sqls = records.stream()
 					.map(record -> provider.insertSelective(record))
 					.collect(Collectors.toList());

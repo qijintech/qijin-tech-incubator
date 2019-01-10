@@ -3,16 +3,17 @@ package tech.qijin.satellites.favorites.db.model;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import tech.qijin.util4j.trace.pojo.Channel;
 import tech.qijin.util4j.trace.pojo.EnvEnum;
 
-public class FavoritesExample {
+public class FaFavoritesExample {
     protected String orderByClause;
 
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
 
-    public FavoritesExample() {
+    public FaFavoritesExample() {
         oredCriteria = new ArrayList<Criteria>();
     }
 
@@ -116,52 +117,52 @@ public class FavoritesExample {
             return (Criteria) this;
         }
 
-        public Criteria andIdEqualTo(Integer value) {
+        public Criteria andIdEqualTo(Long value) {
             addCriterion("id =", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdNotEqualTo(Integer value) {
+        public Criteria andIdNotEqualTo(Long value) {
             addCriterion("id <>", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdGreaterThan(Integer value) {
+        public Criteria andIdGreaterThan(Long value) {
             addCriterion("id >", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdGreaterThanOrEqualTo(Integer value) {
+        public Criteria andIdGreaterThanOrEqualTo(Long value) {
             addCriterion("id >=", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdLessThan(Integer value) {
+        public Criteria andIdLessThan(Long value) {
             addCriterion("id <", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdLessThanOrEqualTo(Integer value) {
+        public Criteria andIdLessThanOrEqualTo(Long value) {
             addCriterion("id <=", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdIn(List<Integer> values) {
+        public Criteria andIdIn(List<Long> values) {
             addCriterion("id in", values, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdNotIn(List<Integer> values) {
+        public Criteria andIdNotIn(List<Long> values) {
             addCriterion("id not in", values, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdBetween(Integer value1, Integer value2) {
+        public Criteria andIdBetween(Long value1, Long value2) {
             addCriterion("id between", value1, value2, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdNotBetween(Integer value1, Integer value2) {
+        public Criteria andIdNotBetween(Long value1, Long value2) {
             addCriterion("id not between", value1, value2, "id");
             return (Criteria) this;
         }
@@ -283,6 +284,66 @@ public class FavoritesExample {
 
         public Criteria andItemIdNotBetween(Long value1, Long value2) {
             addCriterion("item_id not between", value1, value2, "itemId");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectIsNull() {
+            addCriterion("collect is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectIsNotNull() {
+            addCriterion("collect is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectEqualTo(Boolean value) {
+            addCriterion("collect =", value, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectNotEqualTo(Boolean value) {
+            addCriterion("collect <>", value, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectGreaterThan(Boolean value) {
+            addCriterion("collect >", value, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectGreaterThanOrEqualTo(Boolean value) {
+            addCriterion("collect >=", value, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectLessThan(Boolean value) {
+            addCriterion("collect <", value, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectLessThanOrEqualTo(Boolean value) {
+            addCriterion("collect <=", value, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectIn(List<Boolean> values) {
+            addCriterion("collect in", values, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectNotIn(List<Boolean> values) {
+            addCriterion("collect not in", values, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectBetween(Boolean value1, Boolean value2) {
+            addCriterion("collect between", value1, value2, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectNotBetween(Boolean value1, Boolean value2) {
+            addCriterion("collect not between", value1, value2, "collect");
             return (Criteria) this;
         }
 
@@ -416,53 +477,113 @@ public class FavoritesExample {
             return (Criteria) this;
         }
 
-        public Criteria andChannelEqualTo(Byte value) {
+        public Criteria andChannelEqualTo(Channel value) {
             addCriterion("channel =", value, "channel");
             return (Criteria) this;
         }
 
-        public Criteria andChannelNotEqualTo(Byte value) {
+        public Criteria andChannelNotEqualTo(Channel value) {
             addCriterion("channel <>", value, "channel");
             return (Criteria) this;
         }
 
-        public Criteria andChannelGreaterThan(Byte value) {
+        public Criteria andChannelGreaterThan(Channel value) {
             addCriterion("channel >", value, "channel");
             return (Criteria) this;
         }
 
-        public Criteria andChannelGreaterThanOrEqualTo(Byte value) {
+        public Criteria andChannelGreaterThanOrEqualTo(Channel value) {
             addCriterion("channel >=", value, "channel");
             return (Criteria) this;
         }
 
-        public Criteria andChannelLessThan(Byte value) {
+        public Criteria andChannelLessThan(Channel value) {
             addCriterion("channel <", value, "channel");
             return (Criteria) this;
         }
 
-        public Criteria andChannelLessThanOrEqualTo(Byte value) {
+        public Criteria andChannelLessThanOrEqualTo(Channel value) {
             addCriterion("channel <=", value, "channel");
             return (Criteria) this;
         }
 
-        public Criteria andChannelIn(List<Byte> values) {
+        public Criteria andChannelIn(List<Channel> values) {
             addCriterion("channel in", values, "channel");
             return (Criteria) this;
         }
 
-        public Criteria andChannelNotIn(List<Byte> values) {
+        public Criteria andChannelNotIn(List<Channel> values) {
             addCriterion("channel not in", values, "channel");
             return (Criteria) this;
         }
 
-        public Criteria andChannelBetween(Byte value1, Byte value2) {
+        public Criteria andChannelBetween(Channel value1, Channel value2) {
             addCriterion("channel between", value1, value2, "channel");
             return (Criteria) this;
         }
 
-        public Criteria andChannelNotBetween(Byte value1, Byte value2) {
+        public Criteria andChannelNotBetween(Channel value1, Channel value2) {
             addCriterion("channel not between", value1, value2, "channel");
+            return (Criteria) this;
+        }
+
+        public Criteria andVersionIsNull() {
+            addCriterion("version is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andVersionIsNotNull() {
+            addCriterion("version is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andVersionEqualTo(Long value) {
+            addCriterion("version =", value, "version");
+            return (Criteria) this;
+        }
+
+        public Criteria andVersionNotEqualTo(Long value) {
+            addCriterion("version <>", value, "version");
+            return (Criteria) this;
+        }
+
+        public Criteria andVersionGreaterThan(Long value) {
+            addCriterion("version >", value, "version");
+            return (Criteria) this;
+        }
+
+        public Criteria andVersionGreaterThanOrEqualTo(Long value) {
+            addCriterion("version >=", value, "version");
+            return (Criteria) this;
+        }
+
+        public Criteria andVersionLessThan(Long value) {
+            addCriterion("version <", value, "version");
+            return (Criteria) this;
+        }
+
+        public Criteria andVersionLessThanOrEqualTo(Long value) {
+            addCriterion("version <=", value, "version");
+            return (Criteria) this;
+        }
+
+        public Criteria andVersionIn(List<Long> values) {
+            addCriterion("version in", values, "version");
+            return (Criteria) this;
+        }
+
+        public Criteria andVersionNotIn(List<Long> values) {
+            addCriterion("version not in", values, "version");
+            return (Criteria) this;
+        }
+
+        public Criteria andVersionBetween(Long value1, Long value2) {
+            addCriterion("version between", value1, value2, "version");
+            return (Criteria) this;
+        }
+
+        public Criteria andVersionNotBetween(Long value1, Long value2) {
+            addCriterion("version not between", value1, value2, "version");
             return (Criteria) this;
         }
 

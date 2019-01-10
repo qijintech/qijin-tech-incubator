@@ -1,11 +1,9 @@
 package tech.qijin.satellites.favorites.server.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import tech.qijin.satellites.favorites.server.vo.FavoritesVo;
+import org.springframework.web.bind.annotation.*;
+import tech.qijin.satellites.favorites.server.vo.FavoriteReqVo;
+import tech.qijin.satellites.favorites.server.vo.FavoritesResVo;
 import tech.qijin.satellites.favorites.service.FavoritesService;
 import tech.qijin.satellites.favorites.service.bo.FavoritesBo;
 import tech.qijin.satellites.favorites.service.spi.SpiService;
@@ -30,24 +28,25 @@ public class FavoritesController {
 
     @ChannelRequired
     @PostMapping("/do")
-    public ResultVo doFavorites(Long itemId) {
-        favoritesService.doFavorites(itemId);
+    public ResultVo doFavorites(@RequestBody FavoriteReqVo favoriteReqVo) {
+        favoritesService.doFavorites(favoriteReqVo.getItemId());
         return ResultVo.instance().success();
     }
 
     @ChannelRequired
     @PostMapping("/cancel")
-    public ResultVo cancelFavorites(Long itemId) {
-        favoritesService.cancelFavorites(itemId);
+    public ResultVo cancelFavorites(@RequestBody FavoriteReqVo favoriteReqVo) {
+        favoritesService.cancelFavorites(favoriteReqVo.getItemId());
         return ResultVo.instance().success();
     }
 
+    @ChannelRequired
     @GetMapping("/list")
-    public List<FavoritesVo> pageFavorites() {
+    public List<FavoritesResVo> pageFavorites() {
         List<FavoritesBo> favoritesBos = spiService.pageFavorites();
         return favoritesBos.stream()
                 .map(favoritesBo -> {
-                    FavoritesVo favoritesVo = new FavoritesVo();
+                    FavoritesResVo favoritesVo = new FavoritesResVo();
                     favoritesVo.setItemId(favoritesBo.getItemId());
                     favoritesVo.setItem(favoritesBo.getItem());
                     return favoritesVo;

@@ -8,7 +8,6 @@ import lombok.Data;
  * 开始做眼保健操：←_← ↑_↑ →_→ ↓_↓
  **/
 @Data
-public class FavoritesVo {
+public class FavoriteReqVo {
     private Long itemId;
-    private Object item;
 }

@@ -3,30 +3,30 @@ package tech.qijin.satellites.favorites.db.mapper;
 import java.util.List;
 import java.util.Map;
 import org.apache.ibatis.jdbc.SQL;
-import tech.qijin.satellites.favorites.db.model.Favorites;
-import tech.qijin.satellites.favorites.db.model.FavoritesExample.Criteria;
-import tech.qijin.satellites.favorites.db.model.FavoritesExample.Criterion;
-import tech.qijin.satellites.favorites.db.model.FavoritesExample;
+import tech.qijin.satellites.favorites.db.model.FaFavorites;
+import tech.qijin.satellites.favorites.db.model.FaFavoritesExample.Criteria;
+import tech.qijin.satellites.favorites.db.model.FaFavoritesExample.Criterion;
+import tech.qijin.satellites.favorites.db.model.FaFavoritesExample;
 
-public class FavoritesSqlProvider {
+public class FaFavoritesSqlProvider {
 
-    public String countByExample(FavoritesExample example) {
+    public String countByExample(FaFavoritesExample example) {
         SQL sql = new SQL();
-        sql.SELECT("count(*)").FROM("favorites");
+        sql.SELECT("count(*)").FROM("fa_favorites");
         applyWhere(sql, example, false);
         return sql.toString();
     }
 
-    public String deleteByExample(FavoritesExample example) {
+    public String deleteByExample(FaFavoritesExample example) {
         SQL sql = new SQL();
-        sql.DELETE_FROM("favorites");
+        sql.DELETE_FROM("fa_favorites");
         applyWhere(sql, example, false);
         return sql.toString();
     }
 
-    public String insertSelective(Favorites record) {
+    public String insertSelective(FaFavorites record) {
         SQL sql = new SQL();
-        sql.INSERT_INTO("favorites");
+        sql.INSERT_INTO("fa_favorites");
         
         if (record.getUserId() != null) {
             sql.VALUES("user_id", "#{userId,jdbcType=BIGINT}");
@@ -34,6 +34,10 @@ public class FavoritesSqlProvider {
         
         if (record.getItemId() != null) {
             sql.VALUES("item_id", "#{itemId,jdbcType=BIGINT}");
+        }
+        
+        if (record.getCollect() != null) {
+            sql.VALUES("collect", "#{collect,jdbcType=TINYINT}");
         }
         
         if (record.getValid() != null) {
@@ -48,6 +52,10 @@ public class FavoritesSqlProvider {
             sql.VALUES("channel", "#{channel,jdbcType=TINYINT}");
         }
         
+        if (record.getVersion() != null) {
+            sql.VALUES("version", "#{version,jdbcType=BIGINT}");
+        }
+        
         if (record.getCtime() != null) {
             sql.VALUES("ctime", "#{ctime,jdbcType=TIMESTAMP}");
         }
@@ -59,7 +67,7 @@ public class FavoritesSqlProvider {
         return sql.toString();
     }
 
-    public String selectByExample(FavoritesExample example) {
+    public String selectByExample(FaFavoritesExample example) {
         SQL sql = new SQL();
         if (example != null && example.isDistinct()) {
             sql.SELECT_DISTINCT("id");
@@ -68,12 +76,14 @@ public class FavoritesSqlProvider {
         }
         sql.SELECT("user_id");
         sql.SELECT("item_id");
+        sql.SELECT("collect");
         sql.SELECT("valid");
         sql.SELECT("env");
         sql.SELECT("channel");
+        sql.SELECT("version");
         sql.SELECT("ctime");
         sql.SELECT("utime");
-        sql.FROM("favorites");
+        sql.FROM("fa_favorites");
         applyWhere(sql, example, false);
         
         if (example != null && example.getOrderByClause() != null) {
@@ -84,14 +94,14 @@ public class FavoritesSqlProvider {
     }
 
     public String updateByExampleSelective(Map<String, Object> parameter) {
-        Favorites record = (Favorites) parameter.get("record");
-        FavoritesExample example = (FavoritesExample) parameter.get("example");
+        FaFavorites record = (FaFavorites) parameter.get("record");
+        FaFavoritesExample example = (FaFavoritesExample) parameter.get("example");
         
         SQL sql = new SQL();
-        sql.UPDATE("favorites");
+        sql.UPDATE("fa_favorites");
         
         if (record.getId() != null) {
-            sql.SET("id = #{record.id,jdbcType=INTEGER}");
+            sql.SET("id = #{record.id,jdbcType=BIGINT}");
         }
         
         if (record.getUserId() != null) {
@@ -100,6 +110,10 @@ public class FavoritesSqlProvider {
         
         if (record.getItemId() != null) {
             sql.SET("item_id = #{record.itemId,jdbcType=BIGINT}");
+        }
+        
+        if (record.getCollect() != null) {
+            sql.SET("collect = #{record.collect,jdbcType=TINYINT}");
         }
         
         if (record.getValid() != null) {
@@ -112,6 +126,10 @@ public class FavoritesSqlProvider {
         
         if (record.getChannel() != null) {
             sql.SET("channel = #{record.channel,jdbcType=TINYINT}");
+        }
+        
+        if (record.getVersion() != null) {
+            sql.SET("version = #{record.version,jdbcType=BIGINT}");
         }
         
         if (record.getCtime() != null) {
@@ -128,25 +146,27 @@ public class FavoritesSqlProvider {
 
     public String updateByExample(Map<String, Object> parameter) {
         SQL sql = new SQL();
-        sql.UPDATE("favorites");
+        sql.UPDATE("fa_favorites");
         
-        sql.SET("id = #{record.id,jdbcType=INTEGER}");
+        sql.SET("id = #{record.id,jdbcType=BIGINT}");
         sql.SET("user_id = #{record.userId,jdbcType=BIGINT}");
         sql.SET("item_id = #{record.itemId,jdbcType=BIGINT}");
+        sql.SET("collect = #{record.collect,jdbcType=TINYINT}");
         sql.SET("valid = #{record.valid,jdbcType=TINYINT}");
         sql.SET("env = #{record.env,jdbcType=TINYINT}");
         sql.SET("channel = #{record.channel,jdbcType=TINYINT}");
+        sql.SET("version = #{record.version,jdbcType=BIGINT}");
         sql.SET("ctime = #{record.ctime,jdbcType=TIMESTAMP}");
         sql.SET("utime = #{record.utime,jdbcType=TIMESTAMP}");
         
-        FavoritesExample example = (FavoritesExample) parameter.get("example");
+        FaFavoritesExample example = (FaFavoritesExample) parameter.get("example");
         applyWhere(sql, example, true);
         return sql.toString();
     }
 
-    public String updateByPrimaryKeySelective(Favorites record) {
+    public String updateByPrimaryKeySelective(FaFavorites record) {
         SQL sql = new SQL();
-        sql.UPDATE("favorites");
+        sql.UPDATE("fa_favorites");
         
         if (record.getUserId() != null) {
             sql.SET("user_id = #{userId,jdbcType=BIGINT}");
@@ -154,6 +174,10 @@ public class FavoritesSqlProvider {
         
         if (record.getItemId() != null) {
             sql.SET("item_id = #{itemId,jdbcType=BIGINT}");
+        }
+        
+        if (record.getCollect() != null) {
+            sql.SET("collect = #{collect,jdbcType=TINYINT}");
         }
         
         if (record.getValid() != null) {
@@ -168,6 +192,10 @@ public class FavoritesSqlProvider {
             sql.SET("channel = #{channel,jdbcType=TINYINT}");
         }
         
+        if (record.getVersion() != null) {
+            sql.SET("version = #{version,jdbcType=BIGINT}");
+        }
+        
         if (record.getCtime() != null) {
             sql.SET("ctime = #{ctime,jdbcType=TIMESTAMP}");
         }
@@ -176,12 +204,12 @@ public class FavoritesSqlProvider {
             sql.SET("utime = #{utime,jdbcType=TIMESTAMP}");
         }
         
-        sql.WHERE("id = #{id,jdbcType=INTEGER}");
+        sql.WHERE("id = #{id,jdbcType=BIGINT}");
         
         return sql.toString();
     }
 
-    protected void applyWhere(SQL sql, FavoritesExample example, boolean includeExamplePhrase) {
+    protected void applyWhere(SQL sql, FaFavoritesExample example, boolean includeExamplePhrase) {
         if (example == null) {
             return;
         }

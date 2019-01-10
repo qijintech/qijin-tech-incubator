@@ -1,24 +1,18 @@
 package tech.qijin.satellites.favorites.service.spi.impl;
 
-import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.support.SpringFactoriesLoader;
 import org.springframework.stereotype.Service;
-import tech.qijin.satellites.favorites.db.model.Favorites;
+import tech.qijin.satellites.favorites.db.model.FaFavorites;
 import tech.qijin.satellites.favorites.service.FavoritesService;
 import tech.qijin.satellites.favorites.service.bo.FavoritesBo;
 import tech.qijin.satellites.favorites.service.spi.ItemServiceProvider;
 import tech.qijin.satellites.favorites.service.spi.SpiService;
-import tech.qijin.util4j.utils.LogFormat;
-import tech.qijin.util4j.utils.MAssert;
 
-import java.net.URL;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-import java.util.ServiceLoader;
 import java.util.stream.Collectors;
 
 /**
@@ -36,12 +30,12 @@ public class SpiServiceImpl implements SpiService {
 
     @Override
     public List<FavoritesBo> pageFavorites() {
-        List<Favorites> favorites = favoritesService.pageFavorites();
+        List<FaFavorites> favorites = favoritesService.pageFavorites();
         if (CollectionUtils.isEmpty(favorites)) {
             return Collections.emptyList();
         }
         List<Long> itemIds = favorites.stream()
-                .map(Favorites::getItemId)
+                .map(FaFavorites::getItemId)
                 .collect(Collectors.toList());
         Map<Long, Object> itemMap = itemServiceProvider.mapItemsByIds(itemIds);
         return favorites.stream()

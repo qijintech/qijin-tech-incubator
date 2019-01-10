@@ -8,7 +8,7 @@
         <groupId>tech.qijin.usercenter</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
-    <artifactId>usercenter-base</artifactId>
+    <artifactId>usercenter-client</artifactId>
     <groupId>tech.qijin.usercenter</groupId>
     <packaging>jar</packaging>
 
@@ -16,7 +16,7 @@
     </dependencies>
 
     <build>
-        <finalName>usercenter-base</finalName>
+        <finalName>usercenter-client</finalName>
     </build>
 
 </project>

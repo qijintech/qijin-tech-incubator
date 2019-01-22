@@ -13,6 +13,8 @@ import tech.qijin.satellites.user.service.UserAccountService;
 import tech.qijin.satellites.user.service.bo.UserBo;
 import tech.qijin.satellites.user.service.helper.UserAccountHelper;
 import tech.qijin.satellites.user.service.helper.UserInfoHelper;
+import tech.qijin.util4j.aop.annotation.Log;
+import tech.qijin.util4j.aop.annotation.Timed;
 import tech.qijin.util4j.cache.redis.RedisUtil;
 import tech.qijin.util4j.lang.constant.ResEnum;
 import tech.qijin.util4j.trace.util.ChannelUtil;
@@ -35,6 +37,8 @@ public class UserAccountServiceImpl implements UserAccountService {
     @Autowired
     private UserInfoHelper userInfoHelper;
 
+    @Timed
+    @Log
     @Transactional
     @Override
     public Optional<String> signUp(String userName, String password, Boolean signIn) {
@@ -51,6 +55,8 @@ public class UserAccountServiceImpl implements UserAccountService {
                 : Optional.empty();
     }
 
+    @Timed
+    @Log
     @Override
     public UserBo signIn(String userName, String password) {
         Optional<UserAccount> userAccountOpt = userAccountHelper.getUserAccountByUserName(userName);
@@ -64,6 +70,8 @@ public class UserAccountServiceImpl implements UserAccountService {
         return userBo;
     }
 
+    @Timed
+    @Log
     @Override
     public boolean signOut(String token) {
         return RedisUtil.del(token) == 1;

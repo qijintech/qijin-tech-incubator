@@ -44,7 +44,6 @@ public class UserAccountController {
     @Autowired
     private UserAccountService userAccountService;
 
-    @Timed
     @FreeAccess
     @ChannelRequired
     @PostMapping("/signup")
@@ -56,8 +55,7 @@ public class UserAccountController {
         return tokenOpt.map(token -> ResultVo.instance().data(token))
                 .orElse(ResultVo.instance().success());
     }
-
-    @LogAndTimed
+    
     @FreeAccess
     @ChannelRequired
     @PostMapping("/signin")

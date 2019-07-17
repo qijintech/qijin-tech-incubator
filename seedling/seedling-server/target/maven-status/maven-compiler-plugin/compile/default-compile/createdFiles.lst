@@ -1,0 +1,8 @@
+tech/qijin/seedling/server/vo/AtlasCompanyReqVo.class
+tech/qijin/seedling/server/vo/AtlasCompanyResVo$AtlasCompanyResVoBuilder.class
+tech/qijin/seedling/server/vo/AtlasCompanyVo.class
+tech/qijin/seedling/server/vo/AtlasCompanyResVo.class
+tech/qijin/seedling/server/api/BaseController.class
+tech/qijin/seedling/server/config/Swagger2Config.class
+tech/qijin/seedling/server/ServerApplication.class
+tech/qijin/seedling/server/api/AtlasCompanyController.class

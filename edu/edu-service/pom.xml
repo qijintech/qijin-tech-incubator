@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>edu</artifactId>
+        <groupId>tech.qijin.edu</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>edu-service</artifactId>
+    <groupId>tech.qijin.edu</groupId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!--project modules-->
+        <dependency>
+            <groupId>tech.qijin.edu</groupId>
+            <artifactId>edu-db</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tech.qijin.edu</groupId>
+            <artifactId>edu-base</artifactId>
+        </dependency>
+
+        <!--util4j modules-->
+        <dependency>
+            <groupId>tech.qijin.util4j</groupId>
+            <artifactId>util4j-lang</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tech.qijin.util4j</groupId>
+            <artifactId>util4j-utils</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tech.qijin.util4j</groupId>
+            <artifactId>util4j-aop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tech.qijin.util4j</groupId>
+            <artifactId>util4j-mybatis</artifactId>
+        </dependency>
+
+        <!--spring boot modules-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-json</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!--alibaba modules-->
+        <dependency>
+            <groupId>com.alibaba.spring</groupId>
+            <artifactId>spring-context-support</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!--db modules-->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!--other modules-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-autoconfigure</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>edu-service</finalName>
+    </build>
+
+</project>

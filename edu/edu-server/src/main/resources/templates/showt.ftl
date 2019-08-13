@@ -1,126 +1,129 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <!-- Bootstrap -->
-    <link href="/bootstrap/css/bootstrap.min.css"
-          rel="stylesheet">
+
+    <title>Bootstrap 4, from LayoutIt!</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
 </head>
 <body>
 
 <div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span8">
-            <h3>
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-left text-info">
                 教师管理
             </h3>
         </div>
-        <div class="span2">
-            <i class="icon-user"></i>
-        </div>
-        <div class="span2">
-            <div class="btn-group">
-                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                    欢迎你
-                    <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href="#">个人中心</a>
-                    </li>
-                    <li>
-                        <a href="#">登出</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
-    <div class="row-fluid">
-        <div class="span2">
-            <p class="nav-header">
-            </p>
-            <div class="nav nav-sidebar flex-column text-center mt-3">
-                <h1 class="nav-item-icon-wrapper">
-                    <a class="nav-item nav-link nuxt-link-active active" href="https://ll100.com/tb/schooling"><img
-                            class="nav-item-icon" src="/images/c3ee3d9.svg" alt=''/></a>
-                </h1> <a class="nav-item nav-link nuxt-link-active active"
-                         href="https://ll100.com/tb/schooling">作业管理</a>
-                <div class="nav-item-icon-wrapper">
-                    <a class="nav-item nav-link" href="https://ll100.com/tb/publishing"><img class="nav-item-icon"
-                                                                                             src="/images/11862f3.svg"
-                                                                                             alt=''/></a>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="card text-white bg-info">
+                <h5 class="card-header">
+                    Card title
+                </h5>
+                <div class="card-body">
+                    <p class="card-text">
+                        Card content
+                    </p>
                 </div>
-                <a class="nav-item nav-link" href="https://ll100.com/tb/publishing">教学苑</a>
-                <div class="nav-item-icon-wrapper">
-                    <a class="nav-item nav-link" href="https://ll100.com/tb/statistics"><img class="nav-item-icon"
-                                                                                             src="/images/4ff20e4.svg"
-                                                                                             alt=''/></a>
+                <div class="card-footer">
+                    Card footer
                 </div>
-                <a class="nav-item nav-link" href="https://ll100.com/tb/statistics">错题管理</a>
-                <div class="nav-item-icon-wrapper">
-                    <a class="nav-item nav-link" href="https://ll100.com/tb/storehouse"><img class="nav-item-icon"
-                                                                                             src="/images/e23fbca.svg"
-                                                                                             alt=''/></a>
-                </div>
-                <a class="nav-item nav-link" href="https://ll100.com/tb/storehouse">组题管理</a>
-                <div class="nav-item-icon-wrapper">
-                    <a class="nav-item nav-link" href="https://ll100.com/tb/clazzes"><img class="nav-item-icon"
-                                                                                          src="/images/6d22e35.svg"
-                                                                                          alt=''/></a>
-                </div>
-                <a class="nav-item nav-link" href="https://ll100.com/tb/clazzes">班级管理</a>
             </div>
         </div>
-        <div class="span10">
-            <div class="row-fluid">
-                <div class="span12">
-                    <div class="btn-group">
-                        <button class="btn">四年级1班</button>
-                        <button data-toggle="dropdown" class="btn dropdown-toggle"><span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">四年级2班</a>
-                            </li>
-                            <li>
-                                <a href="#">四年级3班</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span10">
-                    <div class="tabbable" id="tabs-523027">
-                        <ul class="nav nav-tabs">
-                            <li class="active">
-                                <a data-toggle="tab" href="#panel-573556">待完成作业</a>
-                            </li>
-                            <li>
-                                <a data-toggle="tab" href="#panel-539331">全部作业</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="panel-573556">
-                            </div>
-                            <div class="tab-pane" id="panel-539331">
-                            </div>
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="dropdown">
+
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown">
+                            四年级1班
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item disabled" href="#">Action</a> <a class="dropdown-item" href="#">Another
+                            action</a> <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </div>
                 </div>
-                <div class="span2">
-                    <button class="btn btn-info" type="button">布置作业</button>
+                <div class="col-md-2">
+
+                    <button type="button" class="btn btn-info">
+                        布置作业
+                    </button>
                 </div>
             </div>
-
-            <div class="row-fluid">
-                <div class="span12">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tabbable" id="tabs-548178">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active show" href="#tab1" data-toggle="tab">Section 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tab2" data-toggle="tab">Section 2</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="panel-930797">
+                                <p>
+                                    I'm in Section 1.
+                                </p>
+                            </div>
+                            <div class="tab-pane" id="tab2">
+                                <p>
+                                    Howdy, I'm in Section 2.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <dl>
+                        <dt>
+                            Description lists
+                        </dt>
+                        <dd>
+                            A description list is perfect for defining terms.
+                        </dd>
+                        <dt>
+                            Euismod
+                        </dt>
+                        <dd>
+                            Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+                        </dd>
+                        <dd>
+                            Donec id elit non mi porta gravida at eget metus.
+                        </dd>
+                        <dt>
+                            Malesuada porta
+                        </dt>
+                        <dd>
+                            Etiam porta sem malesuada magna mollis euismod.
+                        </dd>
+                        <dt>
+                            Felis euismod semper eget lacinia
+                        </dt>
+                        <dd>
+                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+                            justo sit amet risus.
+                        </dd>
+                    </dl>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

@@ -12,21 +12,21 @@ public class CommoditySqlProvider {
 
     public String countByExample(CommodityExample example) {
         SQL sql = new SQL();
-        sql.SELECT("count(*)").FROM("commodity");
+        sql.SELECT("count(*)").FROM("item");
         applyWhere(sql, example, false);
         return sql.toString();
     }
 
     public String deleteByExample(CommodityExample example) {
         SQL sql = new SQL();
-        sql.DELETE_FROM("commodity");
+        sql.DELETE_FROM("item");
         applyWhere(sql, example, false);
         return sql.toString();
     }
 
     public String insertSelective(Commodity record) {
         SQL sql = new SQL();
-        sql.INSERT_INTO("commodity");
+        sql.INSERT_INTO("item");
         
         if (record.getTitle() != null) {
             sql.VALUES("title", "#{title,jdbcType=VARCHAR}");
@@ -88,7 +88,7 @@ public class CommoditySqlProvider {
         sql.SELECT("valid");
         sql.SELECT("ctime");
         sql.SELECT("utime");
-        sql.FROM("commodity");
+        sql.FROM("item");
         applyWhere(sql, example, false);
         
         if (example != null && example.getOrderByClause() != null) {
@@ -103,7 +103,7 @@ public class CommoditySqlProvider {
         CommodityExample example = (CommodityExample) parameter.get("example");
         
         SQL sql = new SQL();
-        sql.UPDATE("commodity");
+        sql.UPDATE("item");
         
         if (record.getId() != null) {
             sql.SET("id = #{record.id,jdbcType=INTEGER}");
@@ -155,7 +155,7 @@ public class CommoditySqlProvider {
 
     public String updateByExample(Map<String, Object> parameter) {
         SQL sql = new SQL();
-        sql.UPDATE("commodity");
+        sql.UPDATE("item");
         
         sql.SET("id = #{record.id,jdbcType=INTEGER}");
         sql.SET("title = #{record.title,jdbcType=VARCHAR}");
@@ -176,7 +176,7 @@ public class CommoditySqlProvider {
 
     public String updateByPrimaryKeySelective(Commodity record) {
         SQL sql = new SQL();
-        sql.UPDATE("commodity");
+        sql.UPDATE("item");
         
         if (record.getTitle() != null) {
             sql.SET("title = #{title,jdbcType=VARCHAR}");

@@ -25,13 +25,13 @@ public interface CommodityMapper {
     int deleteByExample(CommodityExample example);
 
     @Delete({
-        "delete from commodity",
+        "delete from item",
         "where id = #{id,jdbcType=INTEGER}"
     })
     int deleteByPrimaryKey(Integer id);
 
     @Insert({
-        "insert into commodity (title, brand, ",
+        "insert into item (title, brand, ",
         "price, quantity, ",
         "pic, slide, type, ",
         "valid, ctime, ",
@@ -68,7 +68,7 @@ public interface CommodityMapper {
     @Select({
         "select",
         "id, title, brand, price, quantity, pic, slide, type, valid, ctime, utime",
-        "from commodity",
+        "from item",
         "where id = #{id,jdbcType=INTEGER}"
     })
     @Results({
@@ -96,7 +96,7 @@ public interface CommodityMapper {
     int updateByPrimaryKeySelective(Commodity record);
 
     @Update({
-        "update commodity",
+        "update item",
         "set title = #{title,jdbcType=VARCHAR},",
           "brand = #{brand,jdbcType=VARCHAR},",
           "price = #{price,jdbcType=INTEGER},",

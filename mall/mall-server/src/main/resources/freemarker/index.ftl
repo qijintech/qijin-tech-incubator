@@ -3,50 +3,50 @@
 <html lang="en-US" class="no-js">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" abstractContent="IE=edge,chrome=1">
+    <meta name="viewport" abstractContent="width=device-width, initial-scale=1.0">
     <link rel="pingback" href="/xmlrpc.php">
-    <link rel="apple-touch-icon" sizes="57x57" href="/wp-content/themes/baeldung/favicon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/wp-content/themes/baeldung/favicon/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/wp-content/themes/baeldung/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/wp-content/themes/baeldung/favicon/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/wp-content/themes/baeldung/favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/wp-content/themes/baeldung/favicon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/wp-content/themes/baeldung/favicon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/wp-content/themes/baeldung/favicon/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/baeldung/favicon/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/wp-content/themes/baeldung/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/wp-content/themes/baeldung/favicon/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/wp-content/themes/baeldung/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/wp-content/themes/baeldung/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/wp-content/themes/baeldung/favicon/manifest.json">
-    <link rel="mask-icon" href="/wp-content/themes/baeldung/favicon/safari-pinned-tab.svg" color="#63b175">
-    <link rel="shortcut icon" href="/wp-content/themes/baeldung/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="/wp-content/themes/baeldung/favicon/mstile-144x144.png">
-    <meta name="msapplication-config" content="/wp-content/themes/baeldung/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="57x57" href="/wp-abstractContent/themes/baeldung/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/wp-abstractContent/themes/baeldung/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/wp-abstractContent/themes/baeldung/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/wp-abstractContent/themes/baeldung/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/wp-abstractContent/themes/baeldung/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/wp-abstractContent/themes/baeldung/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/wp-abstractContent/themes/baeldung/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/wp-abstractContent/themes/baeldung/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/wp-abstractContent/themes/baeldung/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/wp-abstractContent/themes/baeldung/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/wp-abstractContent/themes/baeldung/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/wp-abstractContent/themes/baeldung/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/wp-abstractContent/themes/baeldung/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/wp-abstractContent/themes/baeldung/favicon/manifest.json">
+    <link rel="mask-icon" href="/wp-abstractContent/themes/baeldung/favicon/safari-pinned-tab.svg" color="#63b175">
+    <link rel="shortcut icon" href="/wp-abstractContent/themes/baeldung/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" abstractContent="#da532c">
+    <meta name="msapplication-TileImage" abstractContent="/wp-abstractContent/themes/baeldung/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" abstractContent="/wp-abstractContent/themes/baeldung/favicon/browserconfig.xml">
+    <meta name="theme-color" abstractContent="#ffffff">
 
-    <link type="text/css" media="all" href="https://www.baeldung.com/wp-content/cache/autoptimize/css/autoptimize_da67cb553463c10a1720e042119d1fee.css" rel="stylesheet" /><title>齐晋的技术博客 | 齐晋</title>
+    <link type="text/css" media="all" href="https://www.baeldung.com/wp-abstractContent/cache/autoptimize/css/autoptimize_da67cb553463c10a1720e042119d1fee.css" rel="stylesheet" /><title>齐晋的技术博客 | 齐晋</title>
 
     <link rel="author" href="https://plus.google.com/u/0/+EugenParaschiv" />
-    <meta name="description" content="Tutorial for how to work with properties files and property values in Spring." />
+    <meta name="description" abstractContent="Tutorial for how to work with properties files and property values in Spring." />
     <link rel="canonical" href="https://www.baeldung.com/properties-with-spring" />
-    <meta property="og:title" content="Properties with Spring and Spring Boot | Baeldung" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://www.baeldung.com/properties-with-spring" />
-    <meta property="og:image" content="https://www.baeldung.com/wp-content/uploads/2016/10/social-On-Spring-2.jpg" />
-    <meta property="og:site_name" content="Baeldung" />
-    <meta property="og:description" content="Tutorial for how to work with properties files and property values in Spring." />
-    <meta property="article:published_time" content="2013-10-15T07:42:43Z" />
-    <meta property="article:modified_time" content="2018-11-05T18:47:36Z" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@baeldung" />
-    <meta name="twitter:creator" content="@baeldung" />
-    <meta name="twitter:domain" content="www.baeldung.com" />
-    <meta name="twitter:title" content="Properties with Spring and Spring Boot | Baeldung" />
-    <meta name="twitter:description" content="Tutorial for how to work with properties files and property values in Spring." />
-    <meta name="twitter:image" content="https://www.baeldung.com/wp-content/uploads/2016/10/social-On-Spring-2.jpg" />
+    <meta property="og:title" abstractContent="Properties with Spring and Spring Boot | Baeldung" />
+    <meta property="og:type" abstractContent="article" />
+    <meta property="og:url" abstractContent="https://www.baeldung.com/properties-with-spring" />
+    <meta property="og:image" abstractContent="https://www.baeldung.com/wp-abstractContent/uploads/2016/10/social-On-Spring-2.jpg" />
+    <meta property="og:site_name" abstractContent="Baeldung" />
+    <meta property="og:description" abstractContent="Tutorial for how to work with properties files and property values in Spring." />
+    <meta property="article:published_time" abstractContent="2013-10-15T07:42:43Z" />
+    <meta property="article:modified_time" abstractContent="2018-11-05T18:47:36Z" />
+    <meta name="twitter:card" abstractContent="summary_large_image" />
+    <meta name="twitter:site" abstractContent="@baeldung" />
+    <meta name="twitter:creator" abstractContent="@baeldung" />
+    <meta name="twitter:domain" abstractContent="www.baeldung.com" />
+    <meta name="twitter:title" abstractContent="Properties with Spring and Spring Boot | Baeldung" />
+    <meta name="twitter:description" abstractContent="Tutorial for how to work with properties files and property values in Spring." />
+    <meta name="twitter:image" abstractContent="https://www.baeldung.com/wp-abstractContent/uploads/2016/10/social-On-Spring-2.jpg" />
 
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel='dns-prefetch' href='//s.w.org' />
@@ -438,7 +438,7 @@
         <div class="container">
             <div class="container-inner">
                 <a class="nav--logo_mobile" href="/" title="Baeldung">
-                    <img alt="The Baeldung logo" src="/wp-content/themes/baeldung/icon/logo.svg">
+                    <img alt="The Baeldung logo" src="/wp-abstractContent/themes/baeldung/icon/logo.svg">
                 </a>
                 <a href="#" class="menu-mobile" title="Navigation" onclick="veggieBurger.reset().play();">
                     <svg version="1.1" id="veggieBurger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
@@ -453,14 +453,14 @@
             <div class="container-inner">
                 <ul id="menu-main-menu" class="nav--menu"><li class="big-nav-icon nav--menu_item">
                     <a class="nav--menu_item_anchor menu-not-loaded" href="#" onclick="javascript:ga('send', 'event', 'menu', 'click', 'new_menu_open');">
-                        <svg id="BigNavIcon" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#menu-icon"></svg>
-                    </a><li class="nav--logo"><a href="/" title="Baeldung"><img src="/wp-content/themes/baeldung/icon/logo.svg"></a><li class="nav--menu_item  menu-start-here"><a class="nav--menu_item_anchor" href="/start-here">Start Here</a><li class="nav--menu_item nav--menu_item_darkened nav--menu_has_2_children menu-courses"><a id="menu-item-17021" class="nav--menu_item_anchor nav--menu_item_withDropdown" href="javascript:void(0)">Courses&nbsp;<span class="menu--item_normal">▼</span><span class="menu--item_active">▲</span></a>
+                        <svg id="BigNavIcon" data-src="/wp-abstractContent/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#menu-icon"></svg>
+                    </a><li class="nav--logo"><a href="/" title="Baeldung"><img src="/wp-abstractContent/themes/baeldung/icon/logo.svg"></a><li class="nav--menu_item  menu-start-here"><a class="nav--menu_item_anchor" href="/start-here">Start Here</a><li class="nav--menu_item nav--menu_item_darkened nav--menu_has_2_children menu-courses"><a id="menu-item-17021" class="nav--menu_item_anchor nav--menu_item_withDropdown" href="javascript:void(0)">Courses&nbsp;<span class="menu--item_normal">▼</span><span class="menu--item_active">▲</span></a>
                     <div class="nav--dropdown">
                         <ul class="nav--dropdown_content">
                             <li class="nav--dropdown_item">
                                 <a class="dropdown--item_anchor transition--background" href="/rest-with-spring-course" title="The &#8220;REST With Spring&#8221; Course">
                                     <div class="dropdown--item_icon">
-                                        <svg id="RwsCourseAnimated" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#rws-course-animated"></svg>
+                                        <svg id="RwsCourseAnimated" data-src="/wp-abstractContent/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#rws-course-animated"></svg>
                                     </div>
                                     <div class="dropdown--item_text">
                                         <h3 class="dropdown--item_title">
@@ -475,7 +475,7 @@
                             <li class="nav--dropdown_item">
                                 <a class="dropdown--item_anchor transition--background" href="/learn-spring-security-course" title="The “Learn Spring Security” Course">
                                     <div class="dropdown--item_icon">
-                                        <svg id="LssCourseAnimated" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#lss-course-animated"></svg>
+                                        <svg id="LssCourseAnimated" data-src="/wp-abstractContent/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#lss-course-animated"></svg>
                                     </div>
                                     <div class="dropdown--item_text">
                                         <h3 class="dropdown--item_title">
@@ -493,7 +493,7 @@
                             <li class="nav--dropdown_item">
                                 <a class="dropdown--item_anchor transition--background" href="/persistence-with-spring-series/" title="">
                                     <div class="dropdown--item_icon">
-                                        <svg id="PersistenceGuideSvg" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#persistence-guide-svg"></svg>
+                                        <svg id="PersistenceGuideSvg" data-src="/wp-abstractContent/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#persistence-guide-svg"></svg>
                                     </div>
                                     <div class="dropdown--item_text">
                                         <h3 class="dropdown--item_title">
@@ -508,7 +508,7 @@
                             <li class="nav--dropdown_item">
                                 <a class="dropdown--item_anchor transition--background" href="/rest-with-spring-series/" title="">
                                     <div class="dropdown--item_icon">
-                                        <svg id="RestGuideSvg" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#rest-guide-svg"></svg>
+                                        <svg id="RestGuideSvg" data-src="/wp-abstractContent/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#rest-guide-svg"></svg>
                                     </div>
                                     <div class="dropdown--item_text">
                                         <h3 class="dropdown--item_title">
@@ -523,7 +523,7 @@
                             <li class="nav--dropdown_item">
                                 <a class="dropdown--item_anchor transition--background" href="/security-spring" title="">
                                     <div class="dropdown--item_icon">
-                                        <svg id="SecurityGuideSvg" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#security-guide-svg"></svg>
+                                        <svg id="SecurityGuideSvg" data-src="/wp-abstractContent/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#security-guide-svg"></svg>
                                     </div>
                                     <div class="dropdown--item_text">
                                         <h3 class="dropdown--item_title">
@@ -541,7 +541,7 @@
                             <li class="nav--dropdown_item">
                                 <a class="dropdown--item_anchor transition--background" href="/work-with-me" title="">
                                     <div class="dropdown--item_icon">
-                                        <svg id="SvgConsultingNew" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#svg-consulting-new"></svg>
+                                        <svg id="SvgConsultingNew" data-src="/wp-abstractContent/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#svg-consulting-new"></svg>
                                     </div>
                                     <div class="dropdown--item_text">
                                         <h3 class="dropdown--item_title">
@@ -556,7 +556,7 @@
                             <li class="nav--dropdown_item">
                                 <a class="dropdown--item_anchor transition--background" href="/full_archive" title="">
                                     <div class="dropdown--item_icon">
-                                        <svg id="FullArchiveSvg" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#full-archive-svg"></svg>
+                                        <svg id="FullArchiveSvg" data-src="/wp-abstractContent/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#full-archive-svg"></svg>
                                     </div>
                                     <div class="dropdown--item_text">
                                         <h3 class="dropdown--item_title">
@@ -571,7 +571,7 @@
                             <li class="nav--dropdown_item">
                                 <a class="dropdown--item_anchor transition--background" href="/contribution-guidelines" title="">
                                     <div class="dropdown--item_icon">
-                                        <svg id="ContributeToBaeldungSvgNew" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#contribute-to-baeldung-svg-new"></svg>
+                                        <svg id="ContributeToBaeldungSvgNew" data-src="/wp-abstractContent/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#contribute-to-baeldung-svg-new"></svg>
                                     </div>
                                     <div class="dropdown--item_text">
                                         <h3 class="dropdown--item_title">
@@ -586,7 +586,7 @@
                             <li class="nav--dropdown_item">
                                 <a class="dropdown--item_anchor transition--background" href="/about" title="">
                                     <div class="dropdown--item_icon">
-                                        <svg id="AboutBaeldungSvg" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#about-baeldung-svg"></svg>
+                                        <svg id="AboutBaeldungSvg" data-src="/wp-abstractContent/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#about-baeldung-svg"></svg>
                                     </div>
                                     <div class="dropdown--item_text">
                                         <h3 class="dropdown--item_title">
@@ -598,19 +598,19 @@
                                     </div>
                                 </a>
                             </li>
-                        </ul></div><li class="nav--menu_item  menu-rss"><a id="menu-item-18864" class="nav--menu_item_anchor" href="/feed"><svg id="RssSvg" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#rss-svg"></svg></a><li class="nav--menu_item  menu-search"><a id="menu-item-40489" class="nav--menu_item_anchor" href="#search"><svg id="Search" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#search"></svg></a></ul>
+                        </ul></div><li class="nav--menu_item  menu-rss"><a id="menu-item-18864" class="nav--menu_item_anchor" href="/feed"><svg id="RssSvg" data-src="/wp-abstractContent/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#rss-svg"></svg></a><li class="nav--menu_item  menu-search"><a id="menu-item-40489" class="nav--menu_item_anchor" href="#search"><svg id="Search" data-src="/wp-abstractContent/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#search"></svg></a></ul>
             </div>
         </div>
     </nav>
     <div id="big-nav" class="inactive menu-not-loaded"></div>
-    <div id="content" class="container">
+    <div id="abstractContent" class="container">
         <div class="container-inner">
             <div class="flex-wrap">
                 <div id="main" class="flex-col clearfix" role="main">
                     <article id="post-1215" class="clearfix post-1215 post type-post status-publish format-standard has-post-thumbnail hentry category-spring category-spring-boot" role="article" itemscope itemtype="http://schema.org/BlogPosting">
                         <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://google.com/article" />
-                        <meta itemprop="datePublished" content="October 15, 2013" />
-                        <meta itemprop="dateModified" content="October 15, 2013" />
+                        <meta itemprop="datePublished" abstractContent="October 15, 2013" />
+                        <meta itemprop="dateModified" abstractContent="October 15, 2013" />
                         <header>
 
                             <div class="page-header"><h1 class="single-title entry-title" itemprop="headline">齐晋的技术博客</h1>
@@ -622,17 +622,17 @@
 <a href="/author/eugen/" title="Posts by 齐晋" rel="author">齐晋</a> </span>
                                     </div>
                                     <span itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-<meta itemprop="url" content="https://www.baeldung.com/wp-content/uploads/2016/10/social-On-Spring-2.jpg">
-<meta itemprop="width" content="208">
-<meta itemprop="height" content="208">
+<meta itemprop="url" abstractContent="https://www.baeldung.com/wp-abstractContent/uploads/2016/10/social-On-Spring-2.jpg">
+<meta itemprop="width" abstractContent="208">
+<meta itemprop="height" abstractContent="208">
 </span>
                                     <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
 <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-<meta itemprop="url" content="https://www.baeldung.com/wp-content/uploads/2016/10/social-On-Spring-2.jpg">
-<meta itemprop="width" content="208">
-<meta itemprop="height" content="208">
+<meta itemprop="url" abstractContent="https://www.baeldung.com/wp-abstractContent/uploads/2016/10/social-On-Spring-2.jpg">
+<meta itemprop="width" abstractContent="208">
+<meta itemprop="height" abstractContent="208">
 </span>
-<meta itemprop="name" content="Baeldung">
+<meta itemprop="name" abstractContent="Baeldung">
 </span>
                                     <ul class="categories">
                                         <li><a href="/category/spring/" rel="category tag">Spring</a><span class="btn-share" title="Subscribe for&nbsp;Spring"><span class="tve-leads-two-step-trigger tl-2step-trigger-19258">+</span></span></li><li><a href="/category/spring/spring-boot/" rel="category tag">Spring Boot</a></li> </ul>
@@ -641,10 +641,10 @@
                                 </div>
                             </div>
                         </header>
-                        <section class="post-content clearfix" itemprop="articleBody">
+                        <section class="post-abstractContent clearfix" itemprop="articleBody">
 
-                            <div data-note-content="" class="show-content">
-                                <div class="show-content-free">
+                            <div data-note-abstractContent="" class="show-abstractContent">
+                                <div class="show-abstractContent-free">
                                     <h2>MyBatis 拦截器</h2>
                                     <ul>
                                         <li><a href="https://www.cnblogs.com/fangjian0423/p/mybatis-interceptor.html" target="_blank" rel="nofollow">MyBatis 拦截器 - 原理探究</a></li>
@@ -656,7 +656,7 @@
 
                                 </div>
                             </div>
-                            <div class="show-content-free">
+                            <div class="show-abstractContent-free">
                                 <h2>Spring</h2>
                                 <ul>
                                     <li><a href="https://www.jianshu.com/p/6a998115b4fb" target="_blank">Spring Profile</a></li>
@@ -677,19 +677,19 @@
             </div>
             <div id="sidebar1" class="sidebar flex-col" role="complementary">
                 <div class="sticky-widgets">
-                    <div style="display:none" class="tl-widget-container"><div id="widget_thrive_leads-4" class="widget widget_thrive_leads"><span style="display:none" class="tl-placeholder-f-type-widget"></span></div></div><div id="text-6" class="widget widget_text"> <div class="textwidget"><p><a href="/rws-course"><img class="lazy lazy-hidden aligncenter wp-image-38953 size-full" src="//www.baeldung.com/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="/wp-content/uploads/2018/08/RWS-1-k.jpg" alt="" width="300" height="100" /><noscript><img class="aligncenter wp-image-38953 size-full" src="/wp-content/uploads/2018/08/RWS-1-k.jpg" alt="" width="300" height="100" /></noscript></a></p>
+                    <div style="display:none" class="tl-widget-container"><div id="widget_thrive_leads-4" class="widget widget_thrive_leads"><span style="display:none" class="tl-placeholder-f-type-widget"></span></div></div><div id="text-6" class="widget widget_text"> <div class="textwidget"><p><a href="/rws-course"><img class="lazy lazy-hidden aligncenter wp-image-38953 size-full" src="//www.baeldung.com/wp-abstractContent/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="/wp-abstractContent/uploads/2018/08/RWS-1-k.jpg" alt="" width="300" height="100" /><noscript><img class="aligncenter wp-image-38953 size-full" src="/wp-abstractContent/uploads/2018/08/RWS-1-k.jpg" alt="" width="300" height="100" /></noscript></a></p>
                 </div>
                 </div> </div>
             </div>
         </div>
     </div>
 </div>
-<footer id="footer" class="content-info" role="contentinfo">
+<footer id="footer" class="abstractContent-info" role="contentinfo">
     <div class="container">
         <div class="container-inner">
             <div class="column-wrapper row">
                 <div class="logo-desktop">
-                    <img src="/wp-content/themes/baeldung/icon/logo.svg" alt="The Baeldung logo">
+                    <img src="/wp-abstractContent/themes/baeldung/icon/logo.svg" alt="The Baeldung logo">
                 </div>
                 <div class="widgets">
                     <div id="nav_menu-5" class="widget widget_nav_menu"><h4 class="widgettitle">Categories</h4><ul id="menu-categories" class="menu"><li class="current-post-ancestor active current-post-parent menu-spring"><a href="/category/spring/">Spring</a></li>
@@ -722,7 +722,7 @@
                         <li class="menu-company-info"><a href="/baeldung-company-info">Company Info</a></li>
                     </ul></div> </div>
                 <div class="logo-mobile">
-                    <img src="/wp-content/themes/baeldung/icon/whiteleaf.svg" alt="The Baeldung Logo">
+                    <img src="/wp-abstractContent/themes/baeldung/icon/whiteleaf.svg" alt="The Baeldung Logo">
                 </div>
             </div>
         </div>
@@ -813,36 +813,36 @@
 </script>
 <a id='wpdUserContentInfoAnchor' style='display:none;' rel='#wpdUserContentInfo' data-wpd-lity>wpDiscuz</a><div id='wpdUserContentInfo' style='overflow:auto;background:#FDFDF6;padding:20px;width:600px;max-width:100%;border-radius:6px;' class='lity-hide'></div>
 
-<script type="text/javascript" src="https://www.baeldung.com/wp-content/cache/autoptimize/js/autoptimize_single_488ca2f56c37f84283fc9be63219304f.js?ver=3.0"></script>
-<script type="text/javascript" src="https://www.baeldung.com/wp-content/cache/autoptimize/js/autoptimize_single_a122e7137e224f646b22b910a779d211.js?ver=3.0"></script>
-<script type="text/javascript" src="https://www.baeldung.com/wp-content/cache/autoptimize/js/autoptimize_single_ba290ac0111d2c3f8e1ce36fbaf6a239.js?ver=3.0"></script>
+<script type="text/javascript" src="https://www.baeldung.com/wp-abstractContent/cache/autoptimize/js/autoptimize_single_488ca2f56c37f84283fc9be63219304f.js?ver=3.0"></script>
+<script type="text/javascript" src="https://www.baeldung.com/wp-abstractContent/cache/autoptimize/js/autoptimize_single_a122e7137e224f646b22b910a779d211.js?ver=3.0"></script>
+<script type="text/javascript" src="https://www.baeldung.com/wp-abstractContent/cache/autoptimize/js/autoptimize_single_ba290ac0111d2c3f8e1ce36fbaf6a239.js?ver=3.0"></script>
 <script type="text/javascript">//<![CDATA[
 SyntaxHighlighter.autoloader(
-        "applescript	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAppleScript.js?ver=3.0"
-        ,"as3 actionscript3	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAS3.js?ver=3.0"
-        ,"bash shell	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushBash.js?ver=3.0"
-        ,"cf coldfusion	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushColdFusion.js?ver=3.0"
-        ,"cpp c	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCpp.js?ver=3.0"
-        ,"c# c-sharp csharp	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCSharp.js?ver=3.0"
-        ,"css	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCss.js?ver=3.0"
-        ,"delphi pas pascal	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushDelphi.js?ver=3.0"
-        ,"diff patch	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushDiff.js?ver=3.0"
-        ,"erl erlang	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushErlang.js?ver=3.0"
-        ,"groovy	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushGroovy.js?ver=3.0"
-        ,"java	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJava.js?ver=3.0"
-        ,"jfx javafx	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJavaFX.js?ver=3.0"
-        ,"js jscript javascript	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJScript.js?ver=3.0"
-        ,"perl pl	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPerl.js?ver=3.0"
-        ,"php	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPhp.js?ver=3.0"
-        ,"plain text	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPlain.js?ver=3.0"
-        ,"ps powershell	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPowerShell.js?ver=3.0"
-        ,"py python	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPython.js?ver=3.0"
-        ,"rails ror ruby rb	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushRuby.js?ver=3.0"
-        ,"sass scss	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushSass.js?ver=3.0"
-        ,"scala	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushScala.js?ver=3.0"
-        ,"sql	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushSql.js?ver=3.0"
-        ,"vb vbnet	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushVb.js?ver=3.0"
-        ,"xml xhtml xslt html	https://www.baeldung.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushXml.js?ver=3.0"
+        "applescript	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAppleScript.js?ver=3.0"
+        ,"as3 actionscript3	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAS3.js?ver=3.0"
+        ,"bash shell	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushBash.js?ver=3.0"
+        ,"cf coldfusion	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushColdFusion.js?ver=3.0"
+        ,"cpp c	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCpp.js?ver=3.0"
+        ,"c# c-sharp csharp	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCSharp.js?ver=3.0"
+        ,"css	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCss.js?ver=3.0"
+        ,"delphi pas pascal	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushDelphi.js?ver=3.0"
+        ,"diff patch	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushDiff.js?ver=3.0"
+        ,"erl erlang	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushErlang.js?ver=3.0"
+        ,"groovy	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushGroovy.js?ver=3.0"
+        ,"java	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJava.js?ver=3.0"
+        ,"jfx javafx	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJavaFX.js?ver=3.0"
+        ,"js jscript javascript	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJScript.js?ver=3.0"
+        ,"perl pl	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPerl.js?ver=3.0"
+        ,"php	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPhp.js?ver=3.0"
+        ,"plain text	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPlain.js?ver=3.0"
+        ,"ps powershell	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPowerShell.js?ver=3.0"
+        ,"py python	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPython.js?ver=3.0"
+        ,"rails ror ruby rb	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushRuby.js?ver=3.0"
+        ,"sass scss	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushSass.js?ver=3.0"
+        ,"scala	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushScala.js?ver=3.0"
+        ,"sql	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushSql.js?ver=3.0"
+        ,"vb vbnet	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushVb.js?ver=3.0"
+        ,"xml xhtml xslt html	https://www.baeldung.com/wp-abstractContent/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushXml.js?ver=3.0"
 );
 SyntaxHighlighter.defaults['auto-links'] = true;
 SyntaxHighlighter.defaults['quick-code'] = true;
@@ -880,7 +880,7 @@ SyntaxHighlighter.all();
     var tve_frontend_options = {"is_editor_page":"","page_events":[],"is_single":"1","ajaxurl":"https:\/\/www.baeldung.com\/wp-admin\/admin-ajax.php","social_fb_app_id":"","dash_url":"\/wp-content\/plugins\/thrive-visual-editor\/thrive-dashboard","translations":{"Copy":"Copy"}};
     /* ]]> */
 </script>
-<script type='text/javascript' src='/wp-content/plugins/thrive-leads/js/frontend.min.js?ver=2.0.61'></script>
+<script type='text/javascript' src='/wp-abstractContent/plugins/thrive-leads/js/frontend.min.js?ver=2.0.61'></script>
 <script type='text/javascript' src='/wp-includes/js/jquery/jquery.form.min.js?ver=4.2.1'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
@@ -979,5 +979,5 @@ SyntaxHighlighter.all();
 
 </script>
 <script type="text/javascript">/*<![CDATA[*/if ( !window.TL_Const ) {var TL_Const={"security":"e712103f97","ajax_url":"https:\/\/www.baeldung.com\/wp-admin\/admin-ajax.php","forms":[],"action_conversion":"tve_leads_ajax_conversion","action_impression":"tve_leads_ajax_impression","ajax_load":1,"main_group_id":15516,"display_options":{"allowed_post_types":[],"flag_url_match":false},"two_step_ids":["19258"],"custom_post_data":{"http_referrer":"https:\/\/www.google.ca\/"},"current_screen":{"screen_type":4,"screen_id":1215},"ignored_fields":["email","_captcha_size","_captcha_theme","_captcha_type","_submit_option","_use_captcha","g-recaptcha-response","__tcb_lg_fc","__tcb_lg_msg","_state","_form_type","_error_message_option","_back_url","_submit_option","url","_asset_group","_asset_option","mailchimp_optin"]};} else {ThriveGlobal.$j.extend(true, TL_Const, {"security":"e712103f97","ajax_url":"https:\/\/www.baeldung.com\/wp-admin\/admin-ajax.php","forms":[],"action_conversion":"tve_leads_ajax_conversion","action_impression":"tve_leads_ajax_impression","ajax_load":1,"main_group_id":15516,"display_options":{"allowed_post_types":[],"flag_url_match":false},"two_step_ids":["19258"],"custom_post_data":{"http_referrer":"https:\/\/www.google.ca\/"},"current_screen":{"screen_type":4,"screen_id":1215},"ignored_fields":["email","_captcha_size","_captcha_theme","_captcha_type","_submit_option","_use_captcha","g-recaptcha-response","__tcb_lg_fc","__tcb_lg_msg","_state","_form_type","_error_message_option","_back_url","_submit_option","url","_asset_group","_asset_option","mailchimp_optin"]})} /*]]> */</script><span style="display:none" class="tl-placeholder-f-type-two_step_19258"></span>
-<script type="text/javascript" defer src="https://www.baeldung.com/wp-content/cache/autoptimize/js/autoptimize_1c32fd22eb3b4135b6d3370813f521c4.js"></script></body>
+<script type="text/javascript" defer src="https://www.baeldung.com/wp-abstractContent/cache/autoptimize/js/autoptimize_1c32fd22eb3b4135b6d3370813f521c4.js"></script></body>
 </html>

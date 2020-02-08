@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+
+<head>
+	<title>南开大学校友电子图书馆</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<style>
+		.nk-head {
+			height: 120px;
+			background-color: #6b205b;
+			margin-bottom: 4%;
+		}
+
+		.nk-tail {
+			margin-top: 100px;
+			height: 120px;
+			color: white;
+			background-color: #6b205b;
+		}
+
+		.nk-head img {
+			margin-top: 15px;
+			margin-left: 30px;
+			height: 90px;
+		}
+
+		.nk-head .nk-title {
+			font-size: 30px;
+			float: left;
+			color: white;
+			height: 100%;
+		}
+
+		.nk-head .nk-title span {
+			display: inline-block;
+			margin-top: 40px;
+			margin-left: 10px;
+		}
+
+		.nk-panel {
+			margin-top: 0%;
+		}
+
+		.nk-panel .nk-panel-title {
+			color: #7B2763;
+			font-size: 20px;
+			border-bottom: 4px solid transparent;
+			border-image: linear-gradient(to right, #7B2763, #ffffff);
+			border-image-slice: 1;
+			padding-bottom: 8px;
+			margin-bottom: 6%;
+		}
+
+		.nk-library {
+			width: 100%;
+		}
+
+		.nk-book-box {
+			margin-bottom: 8%;
+		}
+
+		.nk-book {
+			width: 100%;
+			height: 0;
+			padding-bottom: 130%;
+			overflow: hidden;
+		}
+
+		.nk-book img {
+			width: 100%;
+			height: auto;
+		}
+
+		.nk-book-download {
+			padding-top: 5%;
+		}
+
+		.nk-book-download button {
+			width: 100%;
+			background-color: #7B2763;
+			color: white;
+		}
+
+		.nk-book-download button i {
+			margin-right: 6%;
+		}
+		.nk-tail .nk-barcode img{
+			height: 120px;
+    		padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="nk-head">
+			<div class="nk-title" style="width: 25%;"><img src="http://img.qijin.tech/nankai100logo.png"></div>
+			<div class="nk-title"  style="width: 70%;">
+				<img style="margin-top: 0%; padding-left: 10%;" src="http://img.qijin.tech/logo/nankai-logo2.png"><span>校友电子图书馆</span>
+			</div>
+		</div>
+		<div class="nk-body">
+			<div class="nk-panel">
+				<div class="nk-panel-title">高质量电子书</div>
+				<div class="row nk-library">
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img src="http://img.qijin.tech/ebooks/qi_zhou_qi_bing_fa.jpg">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://file.qijin.tech/ebooks/七周七并发模型_compressed.pdf" target="blank"><button
+									type="submit" class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img src="http://img.qijin.tech/ebooks/qi_zhou_qi_yu_yan.jpg">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://file.qijin.tech/ebooks/七周七语言：理解多种编程范型_compressed.pdf" target="blank"><button
+									type="submit" class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img src="http://img.qijin.tech/ebooks/it_jia_gou_zhuan_xing_zhi_dao.jpg">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://file.qijin.tech/ebooks/企业IT架构转型之道_阿里巴巴中台战略思想与架构实战.pdf"
+								target="blank"><button type="submit" class="btn btn-default"><i
+										class="fa fa-cloud-download" aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img src="http://img.qijin.tech/ebooks/spring_boot_in_action.jpg">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://file.qijin.tech/ebooks/Spring Boot实战_compressed.pdf" target="blank"><button
+									type="submit" class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img src="http://img.qijin.tech/ebooks/p_np.jpg">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://file.qijin.tech/ebooks/可能与不可能的边界：P NP问题趣史_compressed.pdf"
+								target="blank"><button type="submit" class="btn btn-default"><i
+										class="fa fa-cloud-download" aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img src="http://img.qijin.tech/ebooks/gao_xiao_cheng_xu_yuan_de_45_ge_xi_guan.jpg">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://file.qijin.tech/ebooks/高效程序员的45个习惯_compressed.pdf" target="blank"><button
+									type="submit" class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img src="http://img.qijin.tech/ebooks/tu_jie_http.jpg">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://file.qijin.tech/ebooks/图解HTTP_compressed.pdf" target="blank"><button
+									type="submit" class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img src="http://img.qijin.tech/ebooks/zi_zhi_sou_suo_yin_qing.jpg">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://file.qijin.tech/ebooks/自制搜索引擎_compressed.pdf" target="blank"><button
+									type="submit" class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img src="http://img.qijin.tech/ebooks/zi_zhi_bian_yi_qi.jpg">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://file.qijin.tech/ebooks/自制编译器_compressed.pdf" target="blank"><button
+									type="submit" class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img src="http://img.qijin.tech/ebooks/xiang_mu_guan_li_xiu_lian.jpg">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://file.qijin.tech/ebooks/项目管理修炼之道_compressed.pdf" target="blank"><button
+									type="submit" class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img src="http://img.qijin.tech/ebooks/ying_xiang_li.png">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://file.qijin.tech/ebooks/影响力：让网站内容打动访客_compressed.pdf" target="blank"><button
+									type="submit" class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img src="http://img.qijin.tech/ebooks/suan_fa_de_le_qu.jpg">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://file.qijin.tech/ebooks/算法的乐趣_compressed.pdf" target="blank"><button
+									type="submit" class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img src="http://img.qijin.tech/ebooks/tui_jian_xi_tong_shi_zhan.jpg">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://file.qijin.tech/ebooks/推荐系统实践_compressed.pdf" target="blank"><button
+									type="submit" class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img src="http://img.qijin.tech/ebooks/30days-os.png">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://file.qijin.tech/ebooks/30天自制操作系统_compressed.pdf" target="blank"><button
+									type="submit" class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nk-panel">
+				<div class="nk-panel-title">互联网公司技术</div>
+				<div class="row nk-library">
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img title="美团-2019技术-前年货-前端篇" src="http://img.qijin.tech/blogs/meituan_2019_front_end.png">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://dpurl.cn/Xy6IOU4" target="blank"><button type="submit"
+									class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img title="美团-2019技术年货-后台篇" src="http://img.qijin.tech/blogs/meituan_2019_backend.png">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://dpurl.cn/DPm3hdo" target="blank"><button type="submit"
+									class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img title="美团-2019技术年货-算法篇" src="http://img.qijin.tech/blogs/meituan_2019_algorithm.png">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://dpurl.cn/gIIjhRw" target="blank"><button type="submit"
+									class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img title="美团-2019技术年货-大数据篇" title="美团-2019技术年货-大数据篇"
+								src="http://img.qijin.tech/blogs/meituan_2019_big_data.png">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://dpurl.cn/Lb7j5xA" target="blank"><button type="submit"
+									class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img title="美团-2019技术年货-学术论文篇" src="http://img.qijin.tech/blogs/meituan_2019_paper.png">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://dpurl.cn/4KE72hn" target="blank"><button type="submit"
+									class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img title="美团-2018技术年货-后台篇" src="http://img.qijin.tech/blogs/meituan_2018_backend.png">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://dpurl.cn/obtIVn" target="blank"><button type="submit"
+									class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img title="美团-2018技术年货-系统篇" src="http://img.qijin.tech/blogs/meituan_2018_arch.png">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://dpurl.cn/zTDWq8Q" target="blank"><button type="submit"
+									class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img title="美团-2018技术年货-运维篇" src="http://img.qijin.tech/blogs/meituan_2018_sre.png">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://dpurl.cn/6zjgHFj" target="blank"><button type="submit"
+									class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img title="美团-2018技术年货-测试篇" src="http://img.qijin.tech/blogs/meituan_2018_test.png">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://dpurl.cn/wfKQqy" target="blank"><button type="submit"
+									class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img title="美团-2018技术年货-算法篇" src="http://img.qijin.tech/blogs/meituan_2018_algorithm.png">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://dpurl.cn/ODj5qAB" target="blank"><button type="submit"
+									class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<img title="美团-2018技术年货-工程师成长篇" src="http://img.qijin.tech/blogs/meituan_2018_growth.png">
+						</div>
+						<div class="nk-book-download">
+							<a href="http://dpurl.cn/p5sPoKT" target="blank"><button type="submit"
+									class="btn btn-default"><i class="fa fa-cloud-download"
+										aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<a target="blank"
+								href="https://developer.aliyun.com/special/tech-java?spm=a2c6h.12873639.0.0.71cf50f6A4UClB">
+								<img title="阿里-Java开发手册" src="http://img.qijin.tech/blogs/ali-java-dev.png">
+							</a>
+						</div>
+						<div class="nk-book-download">
+							<a href="https://102.alibaba.com/downloadFile.do?spm=a2c6h.12999620.1371070.1.49275738gWcW6c&file=1561031481870/Java-huashanxinban.pdf"
+								target="blank"><button type="submit" class="btn btn-default"><i
+										class="fa fa-cloud-download" aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<a target="blank"
+								href="https://developer.aliyun.com/article/727136?spm=a2c6h.12873639.0.0.71cf50f6A4UClB">
+								<img title="阿里-大数据工程师必读手册" src="http://img.qijin.tech/blogs/ali-bigdata.png">
+							</a>
+						</div>
+						<div class="nk-book-download">
+							<a href="https://yq.aliyun.com/download/3822?spm=a2c6h.12873639.0.0.71fa7a4dv4hR8R"
+								target="blank"><button type="submit" class="btn btn-default"><i
+										class="fa fa-cloud-download" aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<a target="blank"
+								href="https://developer.aliyun.com/article/742028?spm=a2c6h.12873639.0.0.71cf50f6A4UClB">
+								<img title="阿里-高德技术2019年刊合集" src="http://img.qijin.tech/blogs/ali-gaode-2019-2.png">
+							</a>
+						</div>
+						<div class="nk-book-download">
+							<a href="https://files.alicdn.com/tpsservice/46a2ae997f5ef395a78c9ab751b6d942.pdf?spm=a2c6h.12873639.0.0.48c0f312drsTbt&file=46a2ae997f5ef395a78c9ab751b6d942.pdf"
+								target="blank"><button type="submit" class="btn btn-default"><i
+										class="fa fa-cloud-download" aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<a target="blank"
+								href="https://developer.aliyun.com/article/723926?spm=a2c6h.12873639.0.0.71cf50f6A4UClB">
+								<img title="阿里-蚂蚁金服在线金融技术解读" src="http://img.qijin.tech/blogs/ali-mayijinfu.png">
+							</a>
+						</div>
+						<div class="nk-book-download">
+							<a href="https://www.yuque.com/pockry/dvkxsk/qi5ywe?spm=a2c6h.12873639.0.0.69be2ef7uigHRH"
+								target="blank"><button type="submit" class="btn btn-default"><i
+										class="fa fa-cloud-download" aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<a target="blank"
+								href="https://developer.aliyun.com/article/728327?spm=a2c6h.12873639.0.0.71cf50f6A4UClB">
+								<img title="阿里-不一样的 双11 技术：阿里巴巴经济体云原生实践"
+									src="http://img.qijin.tech/blogs/ali-cloud-native.png">
+							</a>
+						</div>
+						<div class="nk-book-download">
+							<a href="https://files.alicdn.com/tpsservice/36a3b469dde8d0e8995b685127c2540c.pdf?spm=a2c6h.12873639.0.0.b7564872C0YfVi&file=36a3b469dde8d0e8995b685127c2540c.pdf"
+								target="blank"><button type="submit" class="btn btn-default"><i
+										class="fa fa-cloud-download" aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<a target="blank" href="https://developer.aliyun.com/article/741282">
+								<img title="阿里-阿里巴巴大数据及AI实战" src="http://img.qijin.tech/blogs/ali-bigdata-ai.png">
+							</a>
+						</div>
+						<div class="nk-book-download">
+							<a href="https://yq.aliyun.com/download/3880?spm=a2c6h.12873639.0.0.565b4fc2Nz77fF"
+								target="blank"><button type="submit" class="btn btn-default"><i
+										class="fa fa-cloud-download" aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<a target="blank" href="https://developer.aliyun.com/special/mvp/cloudnative">
+								<img title="阿里-阿里巴巴云原生实践15讲" src="http://img.qijin.tech/blogs/ali-cloud-native-15.png">
+							</a>
+						</div>
+						<div class="nk-book-download">
+							<a href="https://102.alibaba.com/downloadFile.do?spm=a2c6h.13122660.1380761.1.7c897f441kbZUr&file=1562811492336/yunyuansheng.pdf"
+								target="blank"><button type="submit" class="btn btn-default"><i
+										class="fa fa-cloud-download" aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<a target="blank" href="https://developer.aliyun.com/article/726887">
+								<img title="阿里-5G+AI 阿里文娱技术实践" src="http://img.qijin.tech/blogs/ali-5g+ai3.png">
+							</a>
+						</div>
+						<div class="nk-book-download">
+							<a href="https://files.alicdn.com/tpsservice/d5aa26a7092e26459661adb6c196e90f.pdf"
+								target="blank"><button type="submit" class="btn btn-default"><i
+										class="fa fa-cloud-download" aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<a target="blank" href="https://developer.aliyun.com/article/720790">
+								<img title="阿里-Flutter in action" src="http://img.qijin.tech/blogs/ali-flutter.png">
+							</a>
+						</div>
+						<div class="nk-book-download">
+							<a href="https://files.alicdn.com/tpsservice/8694c5659ab04a0229c8ccaa853e69a1.pdf"
+								target="blank"><button type="submit" class="btn btn-default"><i
+										class="fa fa-cloud-download" aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 nk-book-box">
+						<div class="nk-book">
+							<a target="blank" href="https://developer.aliyun.com/article/738638">
+								<img title="阿里-支付宝技术升级战" src="http://img.qijin.tech/blogs/ali-alipay.png">
+							</a>
+						</div>
+						<div class="nk-book-download">
+							<a href="https://files.alicdn.com/tpsservice/82fb6382890e7219984772440d315dd9.pdf"
+								target="blank"><button type="submit" class="btn btn-default"><i
+										class="fa fa-cloud-download" aria-hidden="true"></i>下载</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="nk-tail">
+		<div class="col-md-3"></div>
+		<div class="col-md-3"></div>
+		<div class="col-md-3"></div>
+		<div class="col-md-3 nk-barcode">
+			<img src="http://img.qijin.tech/wechat.png">
+		</div>
+	</div>
+	</div>
+	<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
